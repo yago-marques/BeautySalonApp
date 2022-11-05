@@ -21,7 +21,7 @@ jobs:
       run: |
         set -o pipefail
         xcodebuild build \
-        -scheme iOSGitHubActions \
+        -scheme [APP] \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
         | xcpretty
 
@@ -29,6 +29,6 @@ jobs:
       run: |
         set -o pipefail
         xcodebuild test \
-        -scheme iOSGitHubActions \
-        -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
+        -scheme [APP] \
+        -destination 'platform=iOS Simulator,name=iPhone 8' \
         | xcpretty
