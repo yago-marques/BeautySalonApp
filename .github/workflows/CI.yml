@@ -23,7 +23,6 @@ jobs:
         xcodebuild build \
         -scheme [APP] \
         -destination 'platform=iOS Simulator,name=iPhone 11 Pro' \
-        | xcpretty
 
     - name: Test
       run: |
@@ -31,4 +30,3 @@ jobs:
         xcodebuild test \
         -scheme [APP] \
         -destination 'platform=iOS Simulator,name=iPhone 8' \
-        | xcpretty
