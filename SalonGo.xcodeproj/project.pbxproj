@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */; };
+		DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDC291AE87B00C0570A /* CKUser.swift */; };
+		DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDE291AE91500C0570A /* CKCompany.swift */; };
+		DF18BFE1291AE96600C0570A /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE0291AE96600C0570A /* CKService.swift */; };
+		DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE2291AE9C400C0570A /* CKAppointment.swift */; };
+		DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE4291AEA2E00C0570A /* CKRating.swift */; };
+		DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE7291AF65200C0570A /* EntityFields.swift */; };
+		DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE9291B056400C0570A /* CKStructProtocol.swift */; };
+		DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFEB291B091600C0570A /* RemoteClient.swift */; };
+		DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */; };
+		DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */; };
 		DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E80291AD59200EF7C78 /* CloudKitClient.swift */; };
-		DF699E84291AD6C400EF7C78 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* Account.swift */; };
+		DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* CKAccount.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -38,9 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEntityProtocol.swift; sourceTree = "<group>"; };
+		DF18BFDC291AE87B00C0570A /* CKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUser.swift; sourceTree = "<group>"; };
+		DF18BFDE291AE91500C0570A /* CKCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCompany.swift; sourceTree = "<group>"; };
+		DF18BFE0291AE96600C0570A /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
+		DF18BFE2291AE9C400C0570A /* CKAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAppointment.swift; sourceTree = "<group>"; };
+		DF18BFE4291AEA2E00C0570A /* CKRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRating.swift; sourceTree = "<group>"; };
+		DF18BFE7291AF65200C0570A /* EntityFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFields.swift; sourceTree = "<group>"; };
+		DF18BFE9291B056400C0570A /* CKStructProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKStructProtocol.swift; sourceTree = "<group>"; };
+		DF18BFEB291B091600C0570A /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
+		DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerProtocol.swift; sourceTree = "<group>"; };
+		DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerHelper.swift; sourceTree = "<group>"; };
 		DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalonGo.entitlements; sourceTree = "<group>"; };
 		DF699E80291AD59200EF7C78 /* CloudKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClient.swift; sourceTree = "<group>"; };
-		DF699E83291AD6C400EF7C78 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		DF699E83291AD6C400EF7C78 /* CKAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAccount.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,10 +103,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF18BFD7291AE21300C0570A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFE6291AF63D00C0570A /* Constants */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DF18BFD8291AE21E00C0570A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */,
+				DF18BFE9291B056400C0570A /* CKStructProtocol.swift */,
+				DF18BFEB291B091600C0570A /* RemoteClient.swift */,
+				DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		DF18BFE6291AF63D00C0570A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFE7291AF65200C0570A /* EntityFields.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DF18BFEF291B0BAD00C0570A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		DF699E7A291AD24100EF7C78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DF699E82291AD6B000EF7C78 /* Entity */,
+				DF18BFD7291AE21300C0570A /* Util */,
 				DF699E7E291AD56000EF7C78 /* Client */,
 				F32CFABE291933440056E794 /* ViewController.swift */,
 			);
@@ -120,17 +177,25 @@
 		DF699E7F291AD57500EF7C78 /* CloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF18BFEF291B0BAD00C0570A /* Helper */,
+				DF18BFD8291AE21E00C0570A /* protocols */,
+				DF699E82291AD6B000EF7C78 /* CKEntity */,
 				DF699E80291AD59200EF7C78 /* CloudKitClient.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
 		};
-		DF699E82291AD6B000EF7C78 /* Entity */ = {
+		DF699E82291AD6B000EF7C78 /* CKEntity */ = {
 			isa = PBXGroup;
 			children = (
-				DF699E83291AD6C400EF7C78 /* Account.swift */,
+				DF699E83291AD6C400EF7C78 /* CKAccount.swift */,
+				DF18BFDC291AE87B00C0570A /* CKUser.swift */,
+				DF18BFDE291AE91500C0570A /* CKCompany.swift */,
+				DF18BFE0291AE96600C0570A /* CKService.swift */,
+				DF18BFE2291AE9C400C0570A /* CKAppointment.swift */,
+				DF18BFE4291AEA2E00C0570A /* CKRating.swift */,
 			);
-			path = Entity;
+			path = CKEntity;
 			sourceTree = "<group>";
 		};
 		F32CFAAE291933440056E794 = {
@@ -335,12 +400,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
+				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
 				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
+				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
+				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
+				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
+				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
+				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
-				DF699E84291AD6C400EF7C78 /* Account.swift in Sources */,
+				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
+				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
+				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
+				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
+				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

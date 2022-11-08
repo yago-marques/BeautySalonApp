@@ -6,28 +6,46 @@
 //
 
 import UIKit
+import CloudKit
+
+struct AccountEntity: CKEntityProtocol {
+    var type: CloudKitEntityTypes = .account
+
+    var body: Data = Data()
+
+    init(account: CKAccount) {
+        let data = try? JSONEncoder().encode(account)
+        if let data { self.body = data }
+    }
+}
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        let cloudKit = CloudKitClient()
-        cloudKit.create(.init(
+        // code to test start
+        let cloudKit = CloudKitClient(
+            container: CKContainerHelper(database: CKContainer.default().publicCloudDatabase)
+        )
+
+        let account: CKAccount = .init(
             userId: "abc",
-            email: "yago@gmail.com",
+            email: "yago@yago.com",
             password: "yago123",
-            isCompany: true,
+            isCompany: false,
             createdAt: Date(),
             updatedAt: Date()
-        )) { result in
-            print(result)
+        )
+
+        cloudKit.create(AccountEntity(account: account)) { error in
+            print(error)
         }
+        // code to test end
 
     }
 

@@ -8,22 +8,37 @@
 import Foundation
 import CloudKit
 
-final class CloudKitClient {
+enum CloudKitError: Error {
+    case invalidEntity
+}
 
-    let container = CKContainer.default()
+final class CloudKitClient: RemoteClient {
 
-    func create(_ account: Account, completion: @escaping (Error?) -> Void) {
-        let record = CKRecord(recordType: "Account")
+    let container: CKContainerProtocol
 
-        record.setValue(account.userId, forKey: "userId")
-        record.setValue(account.email, forKey: "email")
-        record.setValue(account.password, forKey: "password")
-        record.setValue(account.isCompany ? 1 : 0, forKey: "isCompany")
-        record.setValue(account.createdAt, forKey: "createdAt")
-        record.setValue(account.updatedAt, forKey: "updatedAt")
+    init(container: CKContainerProtocol) {
+        self.container = container
+    }
 
-        container.publicCloudDatabase.save(record) { (_, error) in
+    func create(_ entity: CKEntityProtocol, completion: @escaping (Error?) -> Void) {
+        let record = makeRecord(values: entity.getValues(), keys: entity.getKeys())
+
+        container.save(record) { (_, error) in
             completion(error)
         }
     }
+
+}
+
+private extension CloudKitClient {
+
+    private func makeRecord<T: Sequence>(values: T, keys: [String]) -> CKRecord {
+        let record = CKRecord(recordType: "Account")
+        values.enumerated().forEach { (index, value) in
+            record.setValue(value, forKey: keys[index])
+        }
+
+        return record
+    }
+
 }
