@@ -76,6 +76,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF699E7A291AD24100EF7C78 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F32CFABE291933440056E794 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DF699E7B291AD24900EF7C78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F32CFAC6291933450056E794 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DF699E7C291AD25100EF7C78 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F32CFAC8291933450056E794 /* LaunchScreen.storyboard */,
+				F32CFABA291933440056E794 /* AppDelegate.swift */,
+				F32CFABC291933440056E794 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +125,9 @@
 		F32CFAB9291933440056E794 /* SalonGo */ = {
 			isa = PBXGroup;
 			children = (
-				F32CFABA291933440056E794 /* AppDelegate.swift */,
-				F32CFABC291933440056E794 /* SceneDelegate.swift */,
-				F32CFABE291933440056E794 /* ViewController.swift */,
-				F32CFAC6291933450056E794 /* Assets.xcassets */,
-				F32CFAC8291933450056E794 /* LaunchScreen.storyboard */,
+				DF699E7C291AD25100EF7C78 /* Application */,
+				DF699E7B291AD24900EF7C78 /* Resource */,
+				DF699E7A291AD24100EF7C78 /* Source */,
 				F32CFACB291933450056E794 /* Info.plist */,
 				F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */,
 			);
