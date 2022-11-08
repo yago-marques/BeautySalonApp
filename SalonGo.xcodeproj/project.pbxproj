@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E80291AD59200EF7C78 /* CloudKitClient.swift */; };
+		DF699E84291AD6C400EF7C78 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* Account.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalonGo.entitlements; sourceTree = "<group>"; };
+		DF699E80291AD59200EF7C78 /* CloudKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClient.swift; sourceTree = "<group>"; };
+		DF699E83291AD6C400EF7C78 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		DF699E7A291AD24100EF7C78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DF699E82291AD6B000EF7C78 /* Entity */,
+				DF699E7E291AD56000EF7C78 /* Client */,
 				F32CFABE291933440056E794 /* ViewController.swift */,
 			);
 			path = Source;
@@ -101,6 +107,30 @@
 				F32CFABC291933440056E794 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		DF699E7E291AD56000EF7C78 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				DF699E7F291AD57500EF7C78 /* CloudKit */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		DF699E7F291AD57500EF7C78 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF699E80291AD59200EF7C78 /* CloudKitClient.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		DF699E82291AD6B000EF7C78 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DF699E83291AD6C400EF7C78 /* Account.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		F32CFAAE291933440056E794 = {
@@ -306,9 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
+				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
+				DF699E84291AD6C400EF7C78 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +517,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,6 +546,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
