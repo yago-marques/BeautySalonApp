@@ -8,16 +8,7 @@
 import UIKit
 import CloudKit
 
-struct AccountEntity: CKEntityProtocol {
-    var type: CloudKitEntityTypes = .account
 
-    var body: Data = Data()
-
-    init(account: CKAccount) {
-        let data = try? JSONEncoder().encode(account)
-        if let data { self.body = data }
-    }
-}
 
 class ViewController: UIViewController {
 

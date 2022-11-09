@@ -21,6 +21,12 @@
 		DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */; };
 		DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */; };
 		DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFFB291B33B400C0570A /* EntityMocks.swift */; };
+		DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */; };
+		DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C001291BCA0D00C0570A /* UserEntity.swift */; };
+		DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C003291BCABC00C0570A /* ServiceEntity.swift */; };
+		DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C005291BCB0A00C0570A /* CompanyEntity.swift */; };
+		DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */; };
+		DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C009291BCC0300C0570A /* RatingEntity.swift */; };
 		DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E80291AD59200EF7C78 /* CloudKitClient.swift */; };
 		DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* CKAccount.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
@@ -56,6 +62,12 @@
 		DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClientTests.swift; sourceTree = "<group>"; };
 		DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitContainerStub.swift; sourceTree = "<group>"; };
 		DF18BFFB291B33B400C0570A /* EntityMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMocks.swift; sourceTree = "<group>"; };
+		DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEntity.swift; sourceTree = "<group>"; };
+		DF18C001291BCA0D00C0570A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		DF18C003291BCABC00C0570A /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEntity.swift; sourceTree = "<group>"; };
+		DF18C005291BCB0A00C0570A /* CompanyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyEntity.swift; sourceTree = "<group>"; };
+		DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentEntity.swift; sourceTree = "<group>"; };
+		DF18C009291BCC0300C0570A /* RatingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingEntity.swift; sourceTree = "<group>"; };
 		DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalonGo.entitlements; sourceTree = "<group>"; };
 		DF699E80291AD59200EF7C78 /* CloudKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClient.swift; sourceTree = "<group>"; };
 		DF699E83291AD6C400EF7C78 /* CKAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAccount.swift; sourceTree = "<group>"; };
@@ -173,6 +185,19 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		DF18BFFE291BC99F00C0570A /* CKEntity */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */,
+				DF18C001291BCA0D00C0570A /* UserEntity.swift */,
+				DF18C003291BCABC00C0570A /* ServiceEntity.swift */,
+				DF18C005291BCB0A00C0570A /* CompanyEntity.swift */,
+				DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */,
+				DF18C009291BCC0300C0570A /* RatingEntity.swift */,
+			);
+			path = CKEntity;
+			sourceTree = "<group>";
+		};
 		DF699E7A291AD24100EF7C78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,13 +239,14 @@
 			children = (
 				DF18BFEF291B0BAD00C0570A /* Helper */,
 				DF18BFD8291AE21E00C0570A /* Protocols */,
-				DF699E82291AD6B000EF7C78 /* CKEntity */,
+				DF699E82291AD6B000EF7C78 /* CKModel */,
+				DF18BFFE291BC99F00C0570A /* CKEntity */,
 				DF699E80291AD59200EF7C78 /* CloudKitClient.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
 		};
-		DF699E82291AD6B000EF7C78 /* CKEntity */ = {
+		DF699E82291AD6B000EF7C78 /* CKModel */ = {
 			isa = PBXGroup;
 			children = (
 				DF699E83291AD6C400EF7C78 /* CKAccount.swift */,
@@ -230,7 +256,7 @@
 				DF18BFE2291AE9C400C0570A /* CKAppointment.swift */,
 				DF18BFE4291AEA2E00C0570A /* CKRating.swift */,
 			);
-			path = CKEntity;
+			path = CKModel;
 			sourceTree = "<group>";
 		};
 		F32CFAAE291933440056E794 = {
@@ -395,21 +421,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */,
 				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
 				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
+				DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */,
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
 				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
 				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
 				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
 				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
 				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
+				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
 				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
+				DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */,
+				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
+				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
 				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
 				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);

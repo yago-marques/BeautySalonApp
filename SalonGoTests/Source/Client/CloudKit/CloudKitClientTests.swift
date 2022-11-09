@@ -20,6 +20,56 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
+    func test_createRecord_withUserEntity() {
+        let myUser = EntityMocks.getUser(id: "User")
+        let (sut, containerStub) = self.makeSUT()
+
+        sut.create(UserEntity(user: myUser)) { error in
+            XCTAssertNil(error)
+            XCTAssertFalse(containerStub.records.isEmpty)
+        }
+    }
+
+    func test_createRecord_withServiceEntity() {
+        let myService = EntityMocks.getService(id: "Service")
+        let (sut, containerStub) = self.makeSUT()
+
+        sut.create(ServiceEntity(service: myService)) { error in
+            XCTAssertNil(error)
+            XCTAssertFalse(containerStub.records.isEmpty)
+        }
+    }
+
+    func test_createRecord_withCompanyEntity() {
+        let myCompany = EntityMocks.getCompany(id: "Company")
+        let (sut, containerStub) = self.makeSUT()
+
+        sut.create(CompanyEntity(company: myCompany)) { error in
+            XCTAssertNil(error)
+            XCTAssertFalse(containerStub.records.isEmpty)
+        }
+    }
+
+    func test_createRecord_withRatingEntity() {
+        let myRating = EntityMocks.getRating(id: "Rating")
+        let (sut, containerStub) = self.makeSUT()
+
+        sut.create(RatingEntity(rating: myRating)) { error in
+            XCTAssertNil(error)
+            XCTAssertFalse(containerStub.records.isEmpty)
+        }
+    }
+
+    func test_createRecord_withAppointmentEntity() {
+        let myAppointment = EntityMocks.getAppointment(id: "Appointment")
+        let (sut, containerStub) = self.makeSUT()
+
+        sut.create(AppointmentEntity(appointment: myAppointment)) { error in
+            XCTAssertNil(error)
+            XCTAssertFalse(containerStub.records.isEmpty)
+        }
+    }
+
 }
 
 extension CloudKitClientTests {
