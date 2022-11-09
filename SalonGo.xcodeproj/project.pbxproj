@@ -27,19 +27,10 @@
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
 		F32CFAD5291933450056E794 /* SalonGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAD4291933450056E794 /* SalonGoTests.swift */; };
-		F32CFADF291933450056E794 /* SalonGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFADE291933450056E794 /* SalonGoUITests.swift */; };
-		F32CFAE1291933450056E794 /* SalonGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F32CFAD1291933450056E794 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F32CFAAF291933440056E794 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F32CFAB6291933440056E794;
-			remoteInfo = SalonGo;
-		};
-		F32CFADB291933450056E794 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F32CFAAF291933440056E794 /* Project object */;
 			proxyType = 1;
@@ -73,9 +64,6 @@
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFAD4291933450056E794 /* SalonGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoTests.swift; sourceTree = "<group>"; };
-		F32CFADA291933450056E794 /* SalonGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F32CFADE291933450056E794 /* SalonGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoUITests.swift; sourceTree = "<group>"; };
-		F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +81,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F32CFAD7291933450056E794 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,15 +92,15 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		DF18BFD8291AE21E00C0570A /* protocols */ = {
+		DF18BFD8291AE21E00C0570A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */,
 				DF18BFE9291B056400C0570A /* CKStructProtocol.swift */,
-				DF18BFEB291B091600C0570A /* RemoteClient.swift */,
 				DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */,
+				DF18BFEB291B091600C0570A /* RemoteClient.swift */,
 			);
-			path = protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		DF18BFE6291AF63D00C0570A /* Constants */ = {
@@ -178,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DF18BFEF291B0BAD00C0570A /* Helper */,
-				DF18BFD8291AE21E00C0570A /* protocols */,
+				DF18BFD8291AE21E00C0570A /* Protocols */,
 				DF699E82291AD6B000EF7C78 /* CKEntity */,
 				DF699E80291AD59200EF7C78 /* CloudKitClient.swift */,
 			);
@@ -203,7 +184,6 @@
 			children = (
 				F32CFAB9291933440056E794 /* SalonGo */,
 				F32CFAD3291933450056E794 /* SalonGoTests */,
-				F32CFADD291933450056E794 /* SalonGoUITests */,
 				F32CFAB8291933440056E794 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,7 +193,6 @@
 			children = (
 				F32CFAB7291933440056E794 /* SalonGo.app */,
 				F32CFAD0291933450056E794 /* SalonGoTests.xctest */,
-				F32CFADA291933450056E794 /* SalonGoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,15 +216,6 @@
 				F32CFAD4291933450056E794 /* SalonGoTests.swift */,
 			);
 			path = SalonGoTests;
-			sourceTree = "<group>";
-		};
-		F32CFADD291933450056E794 /* SalonGoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F32CFADE291933450056E794 /* SalonGoUITests.swift */,
-				F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */,
-			);
-			path = SalonGoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,24 +257,6 @@
 			productReference = F32CFAD0291933450056E794 /* SalonGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F32CFAD9291933450056E794 /* SalonGoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F32CFAEA291933450056E794 /* Build configuration list for PBXNativeTarget "SalonGoUITests" */;
-			buildPhases = (
-				F32CFAD6291933450056E794 /* Sources */,
-				F32CFAD7291933450056E794 /* Frameworks */,
-				F32CFAD8291933450056E794 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F32CFADC291933450056E794 /* PBXTargetDependency */,
-			);
-			name = SalonGoUITests;
-			productName = SalonGoUITests;
-			productReference = F32CFADA291933450056E794 /* SalonGoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,10 +271,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					F32CFACF291933450056E794 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = F32CFAB6291933440056E794;
-					};
-					F32CFAD9291933450056E794 = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = F32CFAB6291933440056E794;
 					};
@@ -343,7 +291,6 @@
 			targets = (
 				F32CFAB6291933440056E794 /* SalonGo */,
 				F32CFACF291933450056E794 /* SalonGoTests */,
-				F32CFAD9291933450056E794 /* SalonGoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -359,13 +306,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F32CFACE291933450056E794 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F32CFAD8291933450056E794 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,15 +368,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F32CFAD6291933450056E794 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F32CFAE1291933450056E794 /* SalonGoUITestsLaunchTests.swift in Sources */,
-				F32CFADF291933450056E794 /* SalonGoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -444,11 +375,6 @@
 			isa = PBXTargetDependency;
 			target = F32CFAB6291933440056E794 /* SalonGo */;
 			targetProxy = F32CFAD1291933450056E794 /* PBXContainerItemProxy */;
-		};
-		F32CFADC291933450056E794 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F32CFAB6291933440056E794 /* SalonGo */;
-			targetProxy = F32CFADB291933450056E794 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -643,9 +569,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,9 +589,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -673,42 +599,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalonGo";
-			};
-			name = Release;
-		};
-		F32CFAEB291933450056E794 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalonGo;
-			};
-			name = Debug;
-		};
-		F32CFAEC291933450056E794 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalonGo;
 			};
 			name = Release;
 		};
@@ -738,15 +628,6 @@
 			buildConfigurations = (
 				F32CFAE8291933450056E794 /* Debug */,
 				F32CFAE9291933450056E794 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F32CFAEA291933450056E794 /* Build configuration list for PBXNativeTarget "SalonGoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F32CFAEB291933450056E794 /* Debug */,
-				F32CFAEC291933450056E794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
