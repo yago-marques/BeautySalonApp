@@ -18,6 +18,9 @@
 		DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFEB291B091600C0570A /* RemoteClient.swift */; };
 		DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */; };
 		DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */; };
+		DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */; };
+		DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */; };
+		DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFFB291B33B400C0570A /* EntityMocks.swift */; };
 		DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E80291AD59200EF7C78 /* CloudKitClient.swift */; };
 		DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* CKAccount.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
@@ -26,7 +29,6 @@
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
-		F32CFAD5291933450056E794 /* SalonGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAD4291933450056E794 /* SalonGoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		DF18BFEB291B091600C0570A /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
 		DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerProtocol.swift; sourceTree = "<group>"; };
 		DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerHelper.swift; sourceTree = "<group>"; };
+		DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClientTests.swift; sourceTree = "<group>"; };
+		DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitContainerStub.swift; sourceTree = "<group>"; };
+		DF18BFFB291B33B400C0570A /* EntityMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMocks.swift; sourceTree = "<group>"; };
 		DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalonGo.entitlements; sourceTree = "<group>"; };
 		DF699E80291AD59200EF7C78 /* CloudKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClient.swift; sourceTree = "<group>"; };
 		DF699E83291AD6C400EF7C78 /* CKAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAccount.swift; sourceTree = "<group>"; };
@@ -63,7 +68,6 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F32CFAD4291933450056E794 /* SalonGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,56 @@
 				DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		DF18BFF2291B2C9300C0570A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFA291B339200C0570A /* Util */,
+				DF18BFF3291B2CC800C0570A /* Client */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DF18BFF3291B2CC800C0570A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF4291B2CD000C0570A /* CloudKit */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		DF18BFF4291B2CD000C0570A /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF7291B2D2B00C0570A /* TestDoubles */,
+				DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		DF18BFF7291B2D2B00C0570A /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		DF18BFFA291B339200C0570A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFD291B33CA00C0570A /* Constants */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DF18BFFD291B33CA00C0570A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFB291B33B400C0570A /* EntityMocks.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		DF699E7A291AD24100EF7C78 /* Source */ = {
@@ -213,7 +267,7 @@
 		F32CFAD3291933450056E794 /* SalonGoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F32CFAD4291933450056E794 /* SalonGoTests.swift */,
+				DF18BFF2291B2C9300C0570A /* Source */,
 			);
 			path = SalonGoTests;
 			sourceTree = "<group>";
@@ -272,6 +326,7 @@
 					};
 					F32CFACF291933450056E794 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = F32CFAB6291933440056E794;
 					};
 				};
@@ -364,7 +419,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32CFAD5291933450056E794 /* SalonGoTests.swift in Sources */,
+				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
+				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
+				DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,15 +624,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalonGo";
@@ -587,11 +651,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
