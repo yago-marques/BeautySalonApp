@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */; };
+		DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDC291AE87B00C0570A /* CKUser.swift */; };
+		DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDE291AE91500C0570A /* CKCompany.swift */; };
+		DF18BFE1291AE96600C0570A /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE0291AE96600C0570A /* CKService.swift */; };
+		DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE2291AE9C400C0570A /* CKAppointment.swift */; };
+		DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE4291AEA2E00C0570A /* CKRating.swift */; };
+		DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE7291AF65200C0570A /* EntityFields.swift */; };
+		DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFE9291B056400C0570A /* CKStructProtocol.swift */; };
+		DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFEB291B091600C0570A /* RemoteClient.swift */; };
+		DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */; };
+		DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */; };
+		DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */; };
+		DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */; };
+		DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFFB291B33B400C0570A /* EntityMocks.swift */; };
+		DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */; };
+		DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C001291BCA0D00C0570A /* UserEntity.swift */; };
+		DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C003291BCABC00C0570A /* ServiceEntity.swift */; };
+		DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C005291BCB0A00C0570A /* CompanyEntity.swift */; };
+		DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */; };
+		DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18C009291BCC0300C0570A /* RatingEntity.swift */; };
+		DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E80291AD59200EF7C78 /* CloudKitClient.swift */; };
+		DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF699E83291AD6C400EF7C78 /* CKAccount.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
-		F32CFAD5291933450056E794 /* SalonGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAD4291933450056E794 /* SalonGoTests.swift */; };
-		F32CFADF291933450056E794 /* SalonGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFADE291933450056E794 /* SalonGoUITests.swift */; };
-		F32CFAE1291933450056E794 /* SalonGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +45,32 @@
 			remoteGlobalIDString = F32CFAB6291933440056E794;
 			remoteInfo = SalonGo;
 		};
-		F32CFADB291933450056E794 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F32CFAAF291933440056E794 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F32CFAB6291933440056E794;
-			remoteInfo = SalonGo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEntityProtocol.swift; sourceTree = "<group>"; };
+		DF18BFDC291AE87B00C0570A /* CKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUser.swift; sourceTree = "<group>"; };
+		DF18BFDE291AE91500C0570A /* CKCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCompany.swift; sourceTree = "<group>"; };
+		DF18BFE0291AE96600C0570A /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
+		DF18BFE2291AE9C400C0570A /* CKAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAppointment.swift; sourceTree = "<group>"; };
+		DF18BFE4291AEA2E00C0570A /* CKRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKRating.swift; sourceTree = "<group>"; };
+		DF18BFE7291AF65200C0570A /* EntityFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityFields.swift; sourceTree = "<group>"; };
+		DF18BFE9291B056400C0570A /* CKStructProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKStructProtocol.swift; sourceTree = "<group>"; };
+		DF18BFEB291B091600C0570A /* RemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteClient.swift; sourceTree = "<group>"; };
+		DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerProtocol.swift; sourceTree = "<group>"; };
+		DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKContainerHelper.swift; sourceTree = "<group>"; };
+		DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClientTests.swift; sourceTree = "<group>"; };
+		DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitContainerStub.swift; sourceTree = "<group>"; };
+		DF18BFFB291B33B400C0570A /* EntityMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityMocks.swift; sourceTree = "<group>"; };
+		DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEntity.swift; sourceTree = "<group>"; };
+		DF18C001291BCA0D00C0570A /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		DF18C003291BCABC00C0570A /* ServiceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEntity.swift; sourceTree = "<group>"; };
+		DF18C005291BCB0A00C0570A /* CompanyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyEntity.swift; sourceTree = "<group>"; };
+		DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentEntity.swift; sourceTree = "<group>"; };
+		DF18C009291BCC0300C0570A /* RatingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingEntity.swift; sourceTree = "<group>"; };
+		DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SalonGo.entitlements; sourceTree = "<group>"; };
+		DF699E80291AD59200EF7C78 /* CloudKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitClient.swift; sourceTree = "<group>"; };
+		DF699E83291AD6C400EF7C78 /* CKAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAccount.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +80,6 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F32CFAD4291933450056E794 /* SalonGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoTests.swift; sourceTree = "<group>"; };
-		F32CFADA291933450056E794 /* SalonGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F32CFADE291933450056E794 /* SalonGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoUITests.swift; sourceTree = "<group>"; };
-		F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalonGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,22 +97,173 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F32CFAD7291933450056E794 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF18BFD7291AE21300C0570A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFE6291AF63D00C0570A /* Constants */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DF18BFD8291AE21E00C0570A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */,
+				DF18BFE9291B056400C0570A /* CKStructProtocol.swift */,
+				DF18BFED291B0A9300C0570A /* CKContainerProtocol.swift */,
+				DF18BFEB291B091600C0570A /* RemoteClient.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF18BFE6291AF63D00C0570A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFE7291AF65200C0570A /* EntityFields.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DF18BFEF291B0BAD00C0570A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF0291B0BBF00C0570A /* CKContainerHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DF18BFF2291B2C9300C0570A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFA291B339200C0570A /* Util */,
+				DF18BFF3291B2CC800C0570A /* Client */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DF18BFF3291B2CC800C0570A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF4291B2CD000C0570A /* CloudKit */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		DF18BFF4291B2CD000C0570A /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF7291B2D2B00C0570A /* TestDoubles */,
+				DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		DF18BFF7291B2D2B00C0570A /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		DF18BFFA291B339200C0570A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFD291B33CA00C0570A /* Constants */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DF18BFFD291B33CA00C0570A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFB291B33B400C0570A /* EntityMocks.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DF18BFFE291BC99F00C0570A /* CKEntity */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */,
+				DF18C001291BCA0D00C0570A /* UserEntity.swift */,
+				DF18C003291BCABC00C0570A /* ServiceEntity.swift */,
+				DF18C005291BCB0A00C0570A /* CompanyEntity.swift */,
+				DF18C007291BCB5E00C0570A /* AppointmentEntity.swift */,
+				DF18C009291BCC0300C0570A /* RatingEntity.swift */,
+			);
+			path = CKEntity;
+			sourceTree = "<group>";
+		};
+		DF699E7A291AD24100EF7C78 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFD7291AE21300C0570A /* Util */,
+				DF699E7E291AD56000EF7C78 /* Client */,
+				F32CFABE291933440056E794 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DF699E7B291AD24900EF7C78 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F32CFAC6291933450056E794 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DF699E7C291AD25100EF7C78 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F32CFAC8291933450056E794 /* LaunchScreen.storyboard */,
+				F32CFABA291933440056E794 /* AppDelegate.swift */,
+				F32CFABC291933440056E794 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DF699E7E291AD56000EF7C78 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				DF699E7F291AD57500EF7C78 /* CloudKit */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		DF699E7F291AD57500EF7C78 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF18BFEF291B0BAD00C0570A /* Helper */,
+				DF18BFD8291AE21E00C0570A /* Protocols */,
+				DF699E82291AD6B000EF7C78 /* CKModel */,
+				DF18BFFE291BC99F00C0570A /* CKEntity */,
+				DF699E80291AD59200EF7C78 /* CloudKitClient.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		DF699E82291AD6B000EF7C78 /* CKModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF699E83291AD6C400EF7C78 /* CKAccount.swift */,
+				DF18BFDC291AE87B00C0570A /* CKUser.swift */,
+				DF18BFDE291AE91500C0570A /* CKCompany.swift */,
+				DF18BFE0291AE96600C0570A /* CKService.swift */,
+				DF18BFE2291AE9C400C0570A /* CKAppointment.swift */,
+				DF18BFE4291AEA2E00C0570A /* CKRating.swift */,
+			);
+			path = CKModel;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
 				F32CFAB9291933440056E794 /* SalonGo */,
 				F32CFAD3291933450056E794 /* SalonGoTests */,
-				F32CFADD291933450056E794 /* SalonGoUITests */,
 				F32CFAB8291933440056E794 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +273,6 @@
 			children = (
 				F32CFAB7291933440056E794 /* SalonGo.app */,
 				F32CFAD0291933450056E794 /* SalonGoTests.xctest */,
-				F32CFADA291933450056E794 /* SalonGoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,11 +280,10 @@
 		F32CFAB9291933440056E794 /* SalonGo */ = {
 			isa = PBXGroup;
 			children = (
-				F32CFABA291933440056E794 /* AppDelegate.swift */,
-				F32CFABC291933440056E794 /* SceneDelegate.swift */,
-				F32CFABE291933440056E794 /* ViewController.swift */,
-				F32CFAC6291933450056E794 /* Assets.xcassets */,
-				F32CFAC8291933450056E794 /* LaunchScreen.storyboard */,
+				DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */,
+				DF699E7C291AD25100EF7C78 /* Application */,
+				DF699E7B291AD24900EF7C78 /* Resource */,
+				DF699E7A291AD24100EF7C78 /* Source */,
 				F32CFACB291933450056E794 /* Info.plist */,
 				F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */,
 			);
@@ -113,18 +293,9 @@
 		F32CFAD3291933450056E794 /* SalonGoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F32CFAD4291933450056E794 /* SalonGoTests.swift */,
+				DF18BFF2291B2C9300C0570A /* Source */,
 			);
 			path = SalonGoTests;
-			sourceTree = "<group>";
-		};
-		F32CFADD291933450056E794 /* SalonGoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F32CFADE291933450056E794 /* SalonGoUITests.swift */,
-				F32CFAE0291933450056E794 /* SalonGoUITestsLaunchTests.swift */,
-			);
-			path = SalonGoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +337,6 @@
 			productReference = F32CFAD0291933450056E794 /* SalonGoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F32CFAD9291933450056E794 /* SalonGoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F32CFAEA291933450056E794 /* Build configuration list for PBXNativeTarget "SalonGoUITests" */;
-			buildPhases = (
-				F32CFAD6291933450056E794 /* Sources */,
-				F32CFAD7291933450056E794 /* Frameworks */,
-				F32CFAD8291933450056E794 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F32CFADC291933450056E794 /* PBXTargetDependency */,
-			);
-			name = SalonGoUITests;
-			productName = SalonGoUITests;
-			productReference = F32CFADA291933450056E794 /* SalonGoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +352,7 @@
 					};
 					F32CFACF291933450056E794 = {
 						CreatedOnToolsVersion = 14.1;
-						TestTargetID = F32CFAB6291933440056E794;
-					};
-					F32CFAD9291933450056E794 = {
-						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = F32CFAB6291933440056E794;
 					};
 				};
@@ -222,7 +372,6 @@
 			targets = (
 				F32CFAB6291933440056E794 /* SalonGo */,
 				F32CFACF291933450056E794 /* SalonGoTests */,
-				F32CFAD9291933450056E794 /* SalonGoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +387,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F32CFACE291933450056E794 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F32CFAD8291933450056E794 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,10 +421,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */,
+				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
+				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
+				DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */,
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
+				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
+				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
+				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
+				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
+				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
+				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
+				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
+				DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */,
+				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
+				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
+				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
+				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
+				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
+				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
+				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,16 +451,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32CFAD5291933450056E794 /* SalonGoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F32CFAD6291933450056E794 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F32CFAE1291933450056E794 /* SalonGoUITestsLaunchTests.swift in Sources */,
-				F32CFADF291933450056E794 /* SalonGoUITests.swift in Sources */,
+				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
+				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
+				DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +464,6 @@
 			isa = PBXTargetDependency;
 			target = F32CFAB6291933440056E794 /* SalonGo */;
 			targetProxy = F32CFAD1291933450056E794 /* PBXContainerItemProxy */;
-		};
-		F32CFADC291933450056E794 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F32CFAB6291933440056E794 /* SalonGo */;
-			targetProxy = F32CFADB291933450056E794 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -449,15 +598,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalonGo/SalonGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SalonGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,15 +627,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SalonGo/SalonGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SalonGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,15 +656,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalonGo";
@@ -523,11 +683,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
+				DEVELOPMENT_TEAM = 3PC4MSN8T7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,42 +701,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalonGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalonGo";
-			};
-			name = Release;
-		};
-		F32CFAEB291933450056E794 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalonGo;
-			};
-			name = Debug;
-		};
-		F32CFAEC291933450056E794 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2P65JA735T;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.quarteto.SalonGoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SalonGo;
 			};
 			name = Release;
 		};
@@ -600,15 +730,6 @@
 			buildConfigurations = (
 				F32CFAE8291933450056E794 /* Debug */,
 				F32CFAE9291933450056E794 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F32CFAEA291933450056E794 /* Build configuration list for PBXNativeTarget "SalonGoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F32CFAEB291933450056E794 /* Debug */,
-				F32CFAEC291933450056E794 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
