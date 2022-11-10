@@ -23,4 +23,18 @@ final class CKContainerHelper: CKContainerProtocol {
         database.save(record, completionHandler: completionHandler)
     }
 
+    func fetch(
+        withQuery query: CKQuery,
+        completionHandler: @escaping (
+            Result<
+                (matchResults: [(CKRecord.ID, Result<CKRecord, Error>)],
+                queryCursor: CKQueryOperation.Cursor?), Error>
+        ) -> Void
+    ) {
+        database.fetch(
+            withQuery: query,
+            completionHandler: completionHandler
+        )
+    }
+
 }

@@ -18,18 +18,20 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
 
         // code to test start
-        let cloudKit = CloudKitClient(
-            container: CKContainer.default().publicCloudDatabase
-        )
-
-        cloudKit.read(at: .account) { result in
-            switch result {
-            case .success(let success):
-                print(success)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
+//        let cloudKit = CloudKitClient(
+//            container: CKContainerHelper(
+//                database: CKContainer.default().publicCloudDatabase
+//            )
+//        )
+//
+//        cloudKit.read(at: .account) { result in
+//            switch result {
+//            case .success(let success):
+//                print(success)
+//            case .failure(let failure):
+//                print(failure)
+//            }
+//        }
         // code to test end
 
     }

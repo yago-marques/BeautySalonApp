@@ -14,9 +14,9 @@ enum CloudKitError: Error {
 
 final class CloudKitClient: RemoteClient {
 
-    let container: CKDatabase
+    let container: CKContainerProtocol
 
-    init(container: CKDatabase) {
+    init(container: CKContainerProtocol) {
         self.container = container
     }
 
