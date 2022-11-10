@@ -8,8 +8,6 @@
 import UIKit
 import CloudKit
 
-
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,24 +17,20 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-//        // code to test start
-//        let cloudKit = CloudKitClient(
-//            container: CKContainerHelper(database: CKContainer.default().publicCloudDatabase)
-//        )
-//
-//        let account: CKAccount = .init(
-//            userId: "abc",
-//            email: "yago@yago.com",
-//            password: "yago123",
-//            isCompany: false,
-//            createdAt: Date(),
-//            updatedAt: Date()
-//        )
-//
-//        cloudKit.create(AccountEntity(account: account)) { error in
-//            print(error)
-//        }
-//        // code to test end
+        // code to test start
+        let cloudKit = CloudKitClient(
+            container: CKContainer.default().publicCloudDatabase
+        )
+
+        cloudKit.read(at: .account) { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+        // code to test end
 
     }
 

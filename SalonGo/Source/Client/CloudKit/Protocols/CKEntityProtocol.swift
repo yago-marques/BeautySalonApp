@@ -7,8 +7,13 @@
 
 import Foundation
 
-enum CloudKitEntityTypes {
-    case account, user, company, rating, service, appointment
+enum CloudKitEntityTypes: String {
+    case account = "Account"
+    case user = "User"
+    case company = "Company"
+    case rating = "Rating"
+    case service = "Service"
+    case appointment = "Appointment"
 }
 
 protocol CKEntityProtocol {

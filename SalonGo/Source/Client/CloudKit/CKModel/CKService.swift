@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CloudKit
 
 struct CKService: Codable, CKStructProtocol {
     let id: String
@@ -24,5 +25,25 @@ struct CKService: Codable, CKStructProtocol {
             self.createdAt,
             self.updatedAt
         ]
+    }
+
+    static func makeWithRecord(record: CKRecord) -> CKStructProtocol? {
+        if
+            let id = record["id"] as? String,
+            let name = record["name"] as? String,
+            let description = record["description"] as? String,
+            let price = record["price"] as? Double,
+            let createdAt = record["createdAt"] as? Date,
+            let updatedAt = record["updatedAt"] as? Date
+        {
+            return CKService(
+                id: id,
+                name: name,
+                description: description,
+                price: price,
+                createdAt: createdAt,
+                updatedAt: updatedAt
+            )
+        } else { return nil }
     }
 }
