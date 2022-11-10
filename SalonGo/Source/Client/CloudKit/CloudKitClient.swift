@@ -36,12 +36,10 @@ final class CloudKitClient: RemoteClient {
         let query = CKQuery(recordType: recordType.rawValue, predicate: predicate)
 
         container.fetch(withQuery: query) { result in
-            switch result {
-            case .success(let allResults):
+            if case let .success(allResults) = result {
                 for matchResult in allResults.matchResults {
                     let recordInfo = matchResult.1
-                    switch recordInfo {
-                    case .success(let record):
+                    if case let .success(record) = recordInfo {
                         if
                             let entity = self.getEntity(record: record, type: recordType)
                         {
@@ -49,12 +47,8 @@ final class CloudKitClient: RemoteClient {
                         } else {
                             completion(.failure(CloudKitError.invalidEntity))
                         }
-                    case .failure(let failure):
-                        completion(.failure(failure))
                     }
                 }
-            case .failure(let failure):
-                completion(.failure(failure))
             }
         }
 
