@@ -12,6 +12,8 @@ import CloudKit
 final class CloudKitContainerStub: CKContainerProtocol {
     var records = [CKRecord]()
 
+    var recordsAccessCounter = 0
+
     func save(_ record: CKRecord, completionHandler: @escaping (CKRecord?, Error?) -> Void) {
         records.append(record)
         completionHandler(record, nil)
@@ -28,6 +30,7 @@ final class CloudKitContainerStub: CKContainerProtocol {
         var matchResults: [(CKRecord.ID, Result<CKRecord, any Error>)] = []
         for record in records
         where record.recordType == query.recordType {
+            recordsAccessCounter += 1
             matchResults.append((record.recordID, .success(record)))
         }
 
@@ -39,5 +42,16 @@ final class CloudKitContainerStub: CKContainerProtocol {
             )
 
         completionHandler(.success(result))
+    }
+
+    func oneRecordForEachEntity() {
+        self.records = [
+            .init(recordType: "Account"),
+            .init(recordType: "User"),
+            .init(recordType: "Company"),
+            .init(recordType: "Rating"),
+            .init(recordType: "Service"),
+            .init(recordType: "Appointment")
+        ]
     }
 }

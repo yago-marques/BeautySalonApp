@@ -11,7 +11,7 @@ import XCTest
 final class CloudKitClientTests: XCTestCase {
 
     // MARK: Create Record
-    func test_createRecord_withAccountEntity() {
+    func test_createRecord_withAccountEntity_recordsNotEmpty() {
         let myAccount = EntityMocks.getAccount(id: "Account")
         let (sut, containerStub) = self.makeSUT()
 
@@ -21,7 +21,7 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
-    func test_createRecord_withUserEntity() {
+    func test_createRecord_withUserEntity_recordsNotEmpty() {
         let myUser = EntityMocks.getUser(id: "User")
         let (sut, containerStub) = self.makeSUT()
 
@@ -31,7 +31,7 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
-    func test_createRecord_withServiceEntity() {
+    func test_createRecord_withServiceEntity_recordsNotEmpty() {
         let myService = EntityMocks.getService(id: "Service")
         let (sut, containerStub) = self.makeSUT()
 
@@ -41,7 +41,7 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
-    func test_createRecord_withCompanyEntity() {
+    func test_createRecord_withCompanyEntity_recordsNotEmpty() {
         let myCompany = EntityMocks.getCompany(id: "Company")
         let (sut, containerStub) = self.makeSUT()
 
@@ -51,7 +51,7 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
-    func test_createRecord_withRatingEntity() {
+    func test_createRecord_withRatingEntity_recordsNotEmpty() {
         let myRating = EntityMocks.getRating(id: "Rating")
         let (sut, containerStub) = self.makeSUT()
 
@@ -61,7 +61,7 @@ final class CloudKitClientTests: XCTestCase {
         }
     }
 
-    func test_createRecord_withAppointmentEntity() {
+    func test_createRecord_withAppointmentEntity_recordsNotEmpty() {
         let myAppointment = EntityMocks.getAppointment(id: "Appointment")
         let (sut, containerStub) = self.makeSUT()
 
@@ -72,7 +72,59 @@ final class CloudKitClientTests: XCTestCase {
     }
 
     // MARK: Read Record
-    
+    func test_fetchRecord_atAccountTable_validAccountRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .account) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
+
+    func test_fetchRecord_atUserTable_validUserRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .user) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
+
+    func test_fetchRecord_atCompanyTable_validCompanyRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .company) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
+
+    func test_fetchRecord_atRatingTable_validRatingRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .rating) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
+
+    func test_fetchRecord_atAppointmentTable_validAppointmentRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .appointment) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
+
+    func test_fetchRecord_atServiceTable_validServiceRecordsAccess() {
+        let (sut, containerStub) = self.makeSUT()
+        containerStub.oneRecordForEachEntity()
+
+        sut.read(at: .service) { _ in
+            XCTAssertEqual(containerStub.recordsAccessCounter, 1)
+        }
+    }
 
 }
 

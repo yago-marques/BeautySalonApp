@@ -25,12 +25,8 @@ class ViewController: UIViewController {
 //        )
 //
 //        cloudKit.read(at: .account) { result in
-//            switch result {
-//            case .success(let success):
-//                print(success)
-//            case .failure(let failure):
-//                print(failure)
-//            }
+//            print(result)
+//            print("-")
 //        }
         // code to test end
 
