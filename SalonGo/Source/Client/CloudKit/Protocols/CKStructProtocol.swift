@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import CloudKit
 
 protocol CKStructProtocol {
     func makeValues() -> [Any]
+    static func makeWithRecord(record: CKRecord) -> CKStructProtocol?
 }
