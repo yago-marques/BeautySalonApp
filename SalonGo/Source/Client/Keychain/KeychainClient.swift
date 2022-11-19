@@ -17,15 +17,19 @@ enum KeychainError: Error {
 final class KeychainClient: SafeStorage {
 
     private let (service, account): (service: String, account: String)
+    private let keychain: KeychainProtocol
+    lazy var queryManager = QueryManager(service: service, account: account)
 
     init(
         credentials: (service: String, account: String) = (
             Bundle.main.bundleIdentifier!,
             Bundle.main.bundleIdentifier!
-        )
+        ),
+        keychain: KeychainProtocol = Keychain()
     ) {
         self.service = credentials.service
         self.account = credentials.account
+        self.keychain = keychain
     }
 
     func create(token: Data) throws {
@@ -39,14 +43,9 @@ final class KeychainClient: SafeStorage {
             }
 
         } else {
-            let query: [String: AnyObject] = [
-                kSecAttrService as String: service as AnyObject,
-                kSecAttrAccount as String: account as AnyObject,
-                kSecClass as String: kSecClassGenericPassword,
-                kSecValueData as String: token as AnyObject,
-            ]
+            let query = queryManager.getValueQuery(token)
 
-            let status = SecItemAdd(query as CFDictionary, nil)
+            let status = keychain.add(query)
 
             if status == errSecDuplicateItem {
                 throw KeychainError.duplicateItem
@@ -61,26 +60,19 @@ final class KeychainClient: SafeStorage {
     }
 
     func read() throws -> String? {
-        let query: [String: AnyObject] = [
-            kSecAttrService as String: self.service as AnyObject,
-            kSecAttrAccount as String: self.account as AnyObject,
-            kSecClass as String: kSecClassGenericPassword,
-            kSecMatchLimit as String: kSecMatchLimitOne,
-            kSecReturnData as String: kCFBooleanTrue
-        ]
+        let query = queryManager.getFinderQuery()
 
-        var itemCopy: AnyObject?
-        let status = SecItemCopyMatching(query as CFDictionary, &itemCopy)
+        let result = keychain.fetch(query)
 
-        guard status != errSecItemNotFound else {
+        guard result.status != errSecItemNotFound else {
             throw KeychainError.itemNotFound
         }
 
-        guard status == errSecSuccess else {
-            throw KeychainError.unexpectedStatus(status)
+        guard result.status == errSecSuccess else {
+            throw KeychainError.unexpectedStatus(result.status)
         }
 
-        guard let tokenData = itemCopy as? Data else {
+        guard let tokenData = result.queryResult as? Data else {
             throw KeychainError.invalidItemFormat
         }
 
@@ -90,20 +82,13 @@ final class KeychainClient: SafeStorage {
     }
 
     func update(token: Data) throws {
-        let query: [String: AnyObject] = [
-            kSecAttrService as String: self.service as AnyObject,
-            kSecAttrAccount as String: self.account as AnyObject,
-            kSecClass as String: kSecClassGenericPassword
-        ]
+        let query = queryManager.getGenericQuery()
 
         let attributes: [String: AnyObject] = [
             kSecValueData as String: token as AnyObject
         ]
 
-        let status = SecItemUpdate(
-            query as CFDictionary,
-            attributes as CFDictionary
-        )
+        let status = keychain.update(query, with: attributes)
 
         guard status != errSecItemNotFound else {
             throw KeychainError.itemNotFound
@@ -115,26 +100,20 @@ final class KeychainClient: SafeStorage {
     }
 
     func delete() throws {
+        let query = queryManager.getGenericQuery()
 
-        let query: [String: AnyObject] = [
-            kSecAttrService as String: self.service as AnyObject,
-            kSecAttrAccount as String: self.account as AnyObject,
-            kSecClass as String: kSecClassGenericPassword
-        ]
-
-        let status = SecItemDelete(query as CFDictionary)
+        let status = keychain.delete(query)
 
         guard status == errSecSuccess else {
             throw KeychainError.unexpectedStatus(status)
         }
-
     }
 }
 
 private extension KeychainClient {
     private func hasToken() -> Bool {
         do {
-            let _ = try self.read()
+            _ = try self.read()
 
             return true
         } catch {
