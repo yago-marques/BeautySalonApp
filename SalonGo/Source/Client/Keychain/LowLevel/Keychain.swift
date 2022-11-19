@@ -11,7 +11,7 @@ public struct KeychainResult {
     /// The status code of a fetch action
     public let status: OSStatus
     /// The result object of a fetch action
-    public let queryResult: AnyObject?
+    public var queryResult: AnyObject?
 }
 
 public class Keychain: KeychainProtocol {

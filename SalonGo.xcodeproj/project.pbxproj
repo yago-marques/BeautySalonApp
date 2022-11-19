@@ -36,6 +36,7 @@
 		DF9FBE002929316D00084694 /* KeychainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBDFF2929316D00084694 /* KeychainProtocol.swift */; };
 		DF9FBE032929362B00084694 /* QueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE022929362B00084694 /* QueryProtocol.swift */; };
 		DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE05292936FC00084694 /* QueryManager.swift */; };
+		DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE0A29293E4B00084694 /* KeychainSpy.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -85,6 +86,7 @@
 		DF9FBDFF2929316D00084694 /* KeychainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainProtocol.swift; sourceTree = "<group>"; };
 		DF9FBE022929362B00084694 /* QueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryProtocol.swift; sourceTree = "<group>"; };
 		DF9FBE05292936FC00084694 /* QueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryManager.swift; sourceTree = "<group>"; };
+		DF9FBE0A29293E4B00084694 /* KeychainSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSpy.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 		DF9FBDDC2929217600084694 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
+				DF9FBE0929293E3800084694 /* TestDoubles */,
 				DF9FBDE02929262900084694 /* KeychainClientTests.swift */,
 			);
 			path = Keychain;
@@ -318,6 +321,14 @@
 				DF9FBE05292936FC00084694 /* QueryManager.swift */,
 			);
 			path = Queries;
+			sourceTree = "<group>";
+		};
+		DF9FBE0929293E3800084694 /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE0A29293E4B00084694 /* KeychainSpy.swift */,
+			);
+			path = TestDoubles;
 			sourceTree = "<group>";
 		};
 		F32CFAAE291933440056E794 = {
@@ -519,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
+				DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */,
 				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
 				DF9FBDE12929262900084694 /* KeychainClientTests.swift in Sources */,
 				DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */,

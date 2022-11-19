@@ -8,8 +8,6 @@
 import Foundation
 
 enum KeychainError: Error {
-    case itemNotFound
-    case duplicateItem
     case invalidItemFormat
     case unexpectedStatus(OSStatus)
 }
@@ -45,16 +43,7 @@ final class KeychainClient: SafeStorage {
         } else {
             let query = queryManager.getValueQuery(token)
 
-            let status = keychain.add(query)
-
-            if status == errSecDuplicateItem {
-                throw KeychainError.duplicateItem
-            }
-
-            guard status == errSecSuccess else {
-                throw KeychainError.unexpectedStatus(status)
-            }
-
+            _ = keychain.add(query)
         }
 
     }
@@ -63,10 +52,6 @@ final class KeychainClient: SafeStorage {
         let query = queryManager.getFinderQuery()
 
         let result = keychain.fetch(query)
-
-        guard result.status != errSecItemNotFound else {
-            throw KeychainError.itemNotFound
-        }
 
         guard result.status == errSecSuccess else {
             throw KeychainError.unexpectedStatus(result.status)
@@ -79,24 +64,6 @@ final class KeychainClient: SafeStorage {
         let token = String(data: tokenData, encoding: .utf8)
 
         return token
-    }
-
-    func update(token: Data) throws {
-        let query = queryManager.getGenericQuery()
-
-        let attributes: [String: AnyObject] = [
-            kSecValueData as String: token as AnyObject
-        ]
-
-        let status = keychain.update(query, with: attributes)
-
-        guard status != errSecItemNotFound else {
-            throw KeychainError.itemNotFound
-        }
-
-        guard status == errSecSuccess else {
-            throw KeychainError.unexpectedStatus(status)
-        }
     }
 
     func delete() throws {
@@ -118,6 +85,20 @@ private extension KeychainClient {
             return true
         } catch {
             return false
+        }
+    }
+
+    private func update(token: Data) throws {
+        let query = queryManager.getGenericQuery()
+
+        let attributes: [String: AnyObject] = [
+            kSecValueData as String: token as AnyObject
+        ]
+
+        let status = keychain.update(query, with: attributes)
+
+        guard status == errSecSuccess else {
+            throw KeychainError.unexpectedStatus(status)
         }
     }
 }
