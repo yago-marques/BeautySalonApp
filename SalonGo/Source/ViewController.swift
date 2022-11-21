@@ -18,15 +18,26 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
 
         // code to test start
-//        let cloudKit = CloudKitClient(
-//            container: CKContainerHelper(
-//                database: CKContainer.default().publicCloudDatabase
-//            )
-//        )
+//        let coredata = CoreDataClient()
 //
-//        cloudKit.read(at: .account) { result in
-//            print(result)
-//            print("-")
+//        do {
+//            try coredata.createUser(with: User(name: "yago", phoneNumber: "123", createdAt: Date(), updatedAt: Date()))
+
+//            let user = try coredata.fetchUser()
+//
+//            print(user.count)
+//            print(user.first?.name)
+//            print(user.first?.phoneNumber)
+//            print(user.first?.createdAt)
+//            print(user.first?.updatedAt)
+
+//            let newUser = User(name: "manuela", phoneNumber: "456", createdAt: Date(), updatedAt: Date())
+//
+//            try coredata.updateUser(user: newUser)
+//
+//            try coredata.deleteUser()
+//        } catch {
+//            print(error)
 //        }
         // code to test end
 
