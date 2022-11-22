@@ -8,6 +8,10 @@
 import Foundation
 import CoreData
 
+enum CoreDataError: Error {
+    case userAlreadyExists
+}
+
 struct CoreDataClient {
     let persistentContainer: NSPersistentContainer
 
@@ -19,20 +23,23 @@ struct CoreDataClient {
 extension CoreDataClient: UserDBManager {
     @discardableResult
     func createUser(with user: User) throws -> CDUserEntity {
-        let context = persistentContainer.viewContext
+        if let users = try? self.fetchUser(), users.isEmpty {
+            let context = persistentContainer.viewContext
+            let userEntity = CDUserEntity(context: context)
 
-        let userEntity = CDUserEntity(context: context)
+            userEntity.name = user.name
+            userEntity.phoneNumber = user.phoneNumber
+            userEntity.createdAt = user.createdAt
+            userEntity.updatedAt = user.updatedAt
 
-        userEntity.name = user.name
-        userEntity.phoneNumber = user.phoneNumber
-        userEntity.createdAt = user.createdAt
-        userEntity.updatedAt = user.updatedAt
-
-        do {
-            try context.save()
-            return userEntity
-        } catch let error {
-            throw error
+            do {
+                try context.save()
+                return userEntity
+            } catch let error {
+                throw error
+            }
+        } else {
+            throw CoreDataError.userAlreadyExists
         }
     }
 
@@ -52,10 +59,10 @@ extension CoreDataClient: UserDBManager {
 
     func updateUser(user: User) throws {
         let context = persistentContainer.viewContext
-        guard let userEntity = try? self.fetchUser().first else { return }
-        userEntity.name = user.name
-        userEntity.phoneNumber = user.phoneNumber
-        userEntity.updatedAt = Date()
+        let userEntity = try? self.fetchUser().first
+        userEntity?.name = user.name
+        userEntity?.phoneNumber = user.phoneNumber
+        userEntity?.updatedAt = Date()
 
         do {
             try context.save()
@@ -66,8 +73,9 @@ extension CoreDataClient: UserDBManager {
 
     func deleteUser() throws {
         let context = persistentContainer.viewContext
-        guard let userEntity = try? self.fetchUser().first else { return }
-        context.delete(userEntity)
+        if let userEntity = try? self.fetchUser().first {
+            context.delete(userEntity)
+        }
 
         do {
             try context.save()

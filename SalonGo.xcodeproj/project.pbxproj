@@ -41,6 +41,9 @@
 		DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE10292BFF0200084694 /* CoreDataClient.swift */; };
 		DF9FBE14292C0C6300084694 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE13292C0C6300084694 /* CoreDataStack.swift */; };
 		DF9FBE17292C161D00084694 /* UserDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE16292C161D00084694 /* UserDBManager.swift */; };
+		DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */; };
+		DF9FBE22292C48EA00084694 /* CoreDataStackFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */; };
+		DF9FBE25292C4CE400084694 /* UserEntityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE24292C4CE400084694 /* UserEntityMock.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -95,6 +98,9 @@
 		DF9FBE10292BFF0200084694 /* CoreDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataClient.swift; sourceTree = "<group>"; };
 		DF9FBE13292C0C6300084694 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DF9FBE16292C161D00084694 /* UserDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManager.swift; sourceTree = "<group>"; };
+		DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManagerTests.swift; sourceTree = "<group>"; };
+		DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackFake.swift; sourceTree = "<group>"; };
+		DF9FBE24292C4CE400084694 /* UserEntityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityMock.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,7 +168,6 @@
 		DF18BFF2291B2C9300C0570A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DF18BFFA291B339200C0570A /* Util */,
 				DF18BFF3291B2CC800C0570A /* Client */,
 			);
 			path = Source;
@@ -171,6 +176,7 @@
 		DF18BFF3291B2CC800C0570A /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DF9FBE18292C43B800084694 /* CoreData */,
 				DF9FBDDC2929217600084694 /* Keychain */,
 				DF18BFF4291B2CD000C0570A /* CloudKit */,
 			);
@@ -180,6 +186,7 @@
 		DF18BFF4291B2CD000C0570A /* CloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF18BFFD291B33CA00C0570A /* Constants */,
 				DF18BFF7291B2D2B00C0570A /* TestDoubles */,
 				DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */,
 			);
@@ -192,14 +199,6 @@
 				DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */,
 			);
 			path = TestDoubles;
-			sourceTree = "<group>";
-		};
-		DF18BFFA291B339200C0570A /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				DF18BFFD291B33CA00C0570A /* Constants */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		DF18BFFD291B33CA00C0570A /* Constants */ = {
@@ -366,6 +365,32 @@
 				DF9FBE16292C161D00084694 /* UserDBManager.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF9FBE18292C43B800084694 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE23292C4CBE00084694 /* Constants */,
+				DF9FBE19292C43C600084694 /* TestDoubles */,
+				DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF9FBE19292C43C600084694 /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		DF9FBE23292C4CBE00084694 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE24292C4CE400084694 /* UserEntityMock.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		F32CFAAE291933440056E794 = {
@@ -572,6 +597,9 @@
 				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
 				DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */,
 				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
+				DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */,
+				DF9FBE22292C48EA00084694 /* CoreDataStackFake.swift in Sources */,
+				DF9FBE25292C4CE400084694 /* UserEntityMock.swift in Sources */,
 				DF9FBDE12929262900084694 /* KeychainClientTests.swift in Sources */,
 				DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */,
 			);
