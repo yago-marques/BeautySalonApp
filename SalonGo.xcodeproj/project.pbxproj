@@ -37,6 +37,13 @@
 		DF9FBE032929362B00084694 /* QueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE022929362B00084694 /* QueryProtocol.swift */; };
 		DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE05292936FC00084694 /* QueryManager.swift */; };
 		DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE0A29293E4B00084694 /* KeychainSpy.swift */; };
+		DF9FBE0E292BFE7E00084694 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE0D292BFE7E00084694 /* User.swift */; };
+		DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE10292BFF0200084694 /* CoreDataClient.swift */; };
+		DF9FBE14292C0C6300084694 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE13292C0C6300084694 /* CoreDataStack.swift */; };
+		DF9FBE17292C161D00084694 /* UserDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE16292C161D00084694 /* UserDBManager.swift */; };
+		DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */; };
+		DF9FBE22292C48EA00084694 /* CoreDataStackFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */; };
+		DF9FBE25292C4CE400084694 /* UserEntityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE24292C4CE400084694 /* UserEntityMock.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -87,6 +94,13 @@
 		DF9FBE022929362B00084694 /* QueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryProtocol.swift; sourceTree = "<group>"; };
 		DF9FBE05292936FC00084694 /* QueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryManager.swift; sourceTree = "<group>"; };
 		DF9FBE0A29293E4B00084694 /* KeychainSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSpy.swift; sourceTree = "<group>"; };
+		DF9FBE0D292BFE7E00084694 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF9FBE10292BFF0200084694 /* CoreDataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataClient.swift; sourceTree = "<group>"; };
+		DF9FBE13292C0C6300084694 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DF9FBE16292C161D00084694 /* UserDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManager.swift; sourceTree = "<group>"; };
+		DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManagerTests.swift; sourceTree = "<group>"; };
+		DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackFake.swift; sourceTree = "<group>"; };
+		DF9FBE24292C4CE400084694 /* UserEntityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityMock.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,7 +168,6 @@
 		DF18BFF2291B2C9300C0570A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DF18BFFA291B339200C0570A /* Util */,
 				DF18BFF3291B2CC800C0570A /* Client */,
 			);
 			path = Source;
@@ -163,6 +176,7 @@
 		DF18BFF3291B2CC800C0570A /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DF9FBE18292C43B800084694 /* CoreData */,
 				DF9FBDDC2929217600084694 /* Keychain */,
 				DF18BFF4291B2CD000C0570A /* CloudKit */,
 			);
@@ -172,6 +186,7 @@
 		DF18BFF4291B2CD000C0570A /* CloudKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF18BFFD291B33CA00C0570A /* Constants */,
 				DF18BFF7291B2D2B00C0570A /* TestDoubles */,
 				DF18BFF5291B2D0D00C0570A /* CloudKitClientTests.swift */,
 			);
@@ -184,14 +199,6 @@
 				DF18BFF8291B2DC700C0570A /* CloudKitContainerStub.swift */,
 			);
 			path = TestDoubles;
-			sourceTree = "<group>";
-		};
-		DF18BFFA291B339200C0570A /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				DF18BFFD291B33CA00C0570A /* Constants */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		DF18BFFD291B33CA00C0570A /* Constants */ = {
@@ -219,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				DF18BFD7291AE21300C0570A /* Util */,
+				DF9FBE0C292BFE6200084694 /* Entities */,
 				DF699E7E291AD56000EF7C78 /* Client */,
 				F32CFABE291933440056E794 /* ViewController.swift */,
 			);
@@ -246,6 +254,7 @@
 		DF699E7E291AD56000EF7C78 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DF9FBE0F292BFED900084694 /* CoreData */,
 				DF9FBDD62929175F00084694 /* Keychain */,
 				DF699E7F291AD57500EF7C78 /* CloudKit */,
 			);
@@ -331,6 +340,59 @@
 			path = TestDoubles;
 			sourceTree = "<group>";
 		};
+		DF9FBE0C292BFE6200084694 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE0D292BFE7E00084694 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DF9FBE0F292BFED900084694 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE15292C15D000084694 /* Protocols */,
+				F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */,
+				DF9FBE13292C0C6300084694 /* CoreDataStack.swift */,
+				DF9FBE10292BFF0200084694 /* CoreDataClient.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF9FBE15292C15D000084694 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE16292C161D00084694 /* UserDBManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF9FBE18292C43B800084694 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE23292C4CBE00084694 /* Constants */,
+				DF9FBE19292C43C600084694 /* TestDoubles */,
+				DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF9FBE19292C43C600084694 /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		DF9FBE23292C4CBE00084694 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE24292C4CE400084694 /* UserEntityMock.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -357,7 +419,6 @@
 				DF699E7B291AD24900EF7C78 /* Resource */,
 				DF699E7A291AD24100EF7C78 /* Source */,
 				F32CFACB291933450056E794 /* Info.plist */,
-				F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */,
 			);
 			path = SalonGo;
 			sourceTree = "<group>";
@@ -500,7 +561,10 @@
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
 				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
 				DF9FBE032929362B00084694 /* QueryProtocol.swift in Sources */,
+				DF9FBE14292C0C6300084694 /* CoreDataStack.swift in Sources */,
 				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
+				DF9FBE0E292BFE7E00084694 /* User.swift in Sources */,
+				DF9FBE17292C161D00084694 /* UserDBManager.swift in Sources */,
 				DF9FBE002929316D00084694 /* KeychainProtocol.swift in Sources */,
 				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
 				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
@@ -512,6 +576,7 @@
 				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
 				DF9FBDFD2929311A00084694 /* Keychain.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
+				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF9FBDD82929177B00084694 /* KeychainClient.swift in Sources */,
@@ -532,6 +597,9 @@
 				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
 				DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */,
 				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
+				DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */,
+				DF9FBE22292C48EA00084694 /* CoreDataStackFake.swift in Sources */,
+				DF9FBE25292C4CE400084694 /* UserEntityMock.swift in Sources */,
 				DF9FBDE12929262900084694 /* KeychainClientTests.swift in Sources */,
 				DF18BFFC291B33B400C0570A /* EntityMocks.swift in Sources */,
 			);
