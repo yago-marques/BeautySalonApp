@@ -447,13 +447,6 @@
 			path = "UI Components";
 			sourceTree = "<group>";
 		};
-		DF9FBE352931533500084694 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		DF9FBE3A29315BC100084694 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,7 +468,6 @@
 		DF9FBE3C29315BF200084694 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				DF9FBE352931533500084694 /* Services */,
 				DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */,
 			);
 			path = Interactor;
