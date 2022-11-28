@@ -50,6 +50,7 @@
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
+		F899ED942934DFFB005305EE /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899ED932934DFFB005305EE /* AppointmentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F899ED932934DFFB005305EE /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		DF699E7A291AD24100EF7C78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F899ED912934DFB5005305EE /* Scenes */,
 				DF18BFD7291AE21300C0570A /* Util */,
 				DF9FBE0C292BFE6200084694 /* Entities */,
 				DF699E7E291AD56000EF7C78 /* Client */,
@@ -431,6 +434,22 @@
 			path = SalonGoTests;
 			sourceTree = "<group>";
 		};
+		F899ED912934DFB5005305EE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F899ED922934DFC1005305EE /* Client  */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F899ED922934DFC1005305EE /* Client  */ = {
+			isa = PBXGroup;
+			children = (
+				F899ED932934DFFB005305EE /* AppointmentsViewController.swift */,
+			);
+			path = "Client ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,6 +603,7 @@
 				DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */,
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
+				F899ED942934DFFB005305EE /* AppointmentsViewController.swift in Sources */,
 				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
 				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
 				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
