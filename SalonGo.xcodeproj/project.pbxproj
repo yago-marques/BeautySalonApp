@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08E162442934E454000D2105 /* StoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E162432934E454000D2105 /* StoreScreen.swift */; };
+		08E162462934E47E000D2105 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E162452934E47E000D2105 /* StoreViewController.swift */; };
 		DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */; };
 		DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDC291AE87B00C0570A /* CKUser.swift */; };
 		DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDE291AE91500C0570A /* CKCompany.swift */; };
@@ -63,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E162432934E454000D2105 /* StoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScreen.swift; sourceTree = "<group>"; };
+		08E162452934E47E000D2105 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKEntityProtocol.swift; sourceTree = "<group>"; };
 		DF18BFDC291AE87B00C0570A /* CKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKUser.swift; sourceTree = "<group>"; };
 		DF18BFDE291AE91500C0570A /* CKCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKCompany.swift; sourceTree = "<group>"; };
@@ -130,6 +134,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E162402934E410000D2105 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				08E162422934E438000D2105 /* Screen */,
+				08E162412934E426000D2105 /* ViewController */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		08E162412934E426000D2105 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				08E162452934E47E000D2105 /* StoreViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		08E162422934E438000D2105 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				08E162432934E454000D2105 /* StoreScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		DF18BFD7291AE21300C0570A /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +443,7 @@
 		F32CFAB9291933440056E794 /* SalonGo */ = {
 			isa = PBXGroup;
 			children = (
+				08E162402934E410000D2105 /* Store */,
 				DF699E7D291AD2B900EF7C78 /* SalonGo.entitlements */,
 				DF699E7C291AD25100EF7C78 /* Application */,
 				DF699E7B291AD24900EF7C78 /* Resource */,
@@ -574,6 +604,7 @@
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
 				DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */,
 				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
+				08E162462934E47E000D2105 /* StoreViewController.swift in Sources */,
 				DF9FBDFD2929311A00084694 /* Keychain.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
@@ -581,6 +612,7 @@
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF9FBDD82929177B00084694 /* KeychainClient.swift in Sources */,
 				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
+				08E162442934E454000D2105 /* StoreScreen.swift in Sources */,
 				DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */,
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
