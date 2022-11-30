@@ -18,7 +18,7 @@ class StoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "lightGrayNew")
+        view.backgroundColor = UIColor(named: "lightGrayColor")
     }
 
     override func viewWillAppear(_ animated: Bool) {
