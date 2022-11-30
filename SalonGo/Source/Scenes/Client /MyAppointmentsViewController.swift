@@ -7,6 +7,18 @@
 
 import UIKit
 
+class TableHeader: UITableViewHeaderFooterView {
+    static let identifier = "MyAppointmentsViewControllerHeader"
+    
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+}
+
 class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let savedAppointments = services
 
@@ -17,6 +29,7 @@ class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITab
         view.addSubview(tableView)
         tableViewConfigConstraints()
         tableView.register(AppointmentsTableViewCell.self, forCellReuseIdentifier: AppointmentsTableViewCell.identifier)
+        tableView.register(TableHeader.self, forHeaderFooterViewReuseIdentifier: "MyAppointmentsViewControllerHeader")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
@@ -30,10 +43,22 @@ class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITab
         if let cell = tableView.dequeueReusableCell(withIdentifier: AppointmentsTableViewCell.identifier, for: indexPath) as? AppointmentsTableViewCell {
             cell.myServices = savedAppointments[indexPath.row]
             return cell
-//            cell.serviceLabel.text = services[indexPath.row].serviceName
-//            cell.priceLabel.text = services[indexPath.row].price
         }
         return UITableViewCell()
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    // alterar título da section pelo número
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "CLIENTE"
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyAppointmentsViewControllerHeader")
+        return header
     }
 
     func tableViewConfigConstraints() {

@@ -56,7 +56,7 @@ class AppointmentsTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             serviceLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
             serviceLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            serviceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10)
+            serviceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10)
         ])
     }
 
