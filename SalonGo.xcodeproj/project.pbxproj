@@ -54,6 +54,7 @@
 		F899ED9629362761005305EE /* MyAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899ED9529362761005305EE /* MyAppointmentsViewController.swift */; };
 		F899ED9829364D36005305EE /* AppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899ED9729364D36005305EE /* AppointmentsTableViewCell.swift */; };
 		F899ED9A29377CC0005305EE /* ServicesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899ED9929377CC0005305EE /* ServicesMock.swift */; };
+		F899ED9C2937A244005305EE /* AppointmentDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899ED9B2937A244005305EE /* AppointmentDataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		F899ED9529362761005305EE /* MyAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsViewController.swift; sourceTree = "<group>"; };
 		F899ED9729364D36005305EE /* AppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewCell.swift; sourceTree = "<group>"; };
 		F899ED9929377CC0005305EE /* ServicesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesMock.swift; sourceTree = "<group>"; };
+		F899ED9B2937A244005305EE /* AppointmentDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +457,7 @@
 				F899ED9529362761005305EE /* MyAppointmentsViewController.swift */,
 				F899ED9729364D36005305EE /* AppointmentsTableViewCell.swift */,
 				F899ED9929377CC0005305EE /* ServicesMock.swift */,
+				F899ED9B2937A244005305EE /* AppointmentDataTableViewCell.swift */,
 			);
 			path = "Client ";
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF9FBDD82929177B00084694 /* KeychainClient.swift in Sources */,
 				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
+				F899ED9C2937A244005305EE /* AppointmentDataTableViewCell.swift in Sources */,
 				DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */,
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,

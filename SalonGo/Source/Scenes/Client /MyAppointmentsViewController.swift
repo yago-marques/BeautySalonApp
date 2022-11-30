@@ -9,11 +9,11 @@ import UIKit
 
 class TableHeader: UITableViewHeaderFooterView {
     static let identifier = "MyAppointmentsViewControllerHeader"
-    
+
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError()
     }
@@ -21,7 +21,7 @@ class TableHeader: UITableViewHeaderFooterView {
 
 class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let savedAppointments = services
-
+    var sectionNumber = 0
     let tableView = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,7 @@ class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITab
         tableViewConfigConstraints()
         tableView.register(AppointmentsTableViewCell.self, forCellReuseIdentifier: AppointmentsTableViewCell.identifier)
         tableView.register(TableHeader.self, forHeaderFooterViewReuseIdentifier: "MyAppointmentsViewControllerHeader")
+        tableView.register(AppointmentDataTableViewCell.self, forCellReuseIdentifier: AppointmentDataTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
@@ -40,7 +41,14 @@ class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: AppointmentsTableViewCell.identifier, for: indexPath) as? AppointmentsTableViewCell {
+        if sectionNumber == 0 {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: AppointmentsTableViewCell.identifier, for: indexPath) as? AppointmentsTableViewCell {
+                cell.myServices = savedAppointments[indexPath.row]
+                return cell
+            }
+        }
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: AppointmentDataTableViewCell.identifier, for: indexPath) as? AppointmentDataTableViewCell {
             cell.myServices = savedAppointments[indexPath.row]
             return cell
         }
@@ -48,12 +56,16 @@ class MyAppointmentsViewController: UIViewController, UITableViewDelegate, UITab
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
 
     // alterar título da section pelo número
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "CLIENTE"
+        self.sectionNumber = section
+        if section == 0 {
+            return "CLIENTE"
+        }
+        return "DADOS DO SERVIÇO"
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
