@@ -1,18 +1,19 @@
 //
-//  OnboardingRouter.swift
+//  RegistrationRouter.swift
 //  SalonGo
 //
-//  Created by Yago Marques on 25/11/22.
+//  Created by Milena Lima de Alcântara on 30/11/22.
 //
 
+import Foundation
 import UIKit
 
-protocol OnboardingRouting {
+protocol RegistrationRouting {
     var navigation: UINavigationController? { get set }
     func toCatalog()
 }
 
-final class OnboardingRouter: OnboardingRouting {
+final class RegistrationRouter: RegistrationRouting {
     var navigation: UINavigationController?
 
     init(navigation: UINavigationController? = nil) {
@@ -20,6 +21,6 @@ final class OnboardingRouter: OnboardingRouting {
     }
 
     func toCatalog() {
-        navigation?.pushViewController(RegistrationFactory.make(), animated: true)
+        navigation?.pushViewController(ViewController(), animated: true)
     }
 }
