@@ -413,6 +413,7 @@
 		DF9FBE262930DD0A00084694 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F3FD0DD3293E1C8B00550F18 /* Registration */,
 				DF9FBE272930DEBD00084694 /* Onboarding */,
 			);
 			path = Scenes;
@@ -525,6 +526,45 @@
 				DF18BFF2291B2C9300C0570A /* Source */,
 			);
 			path = SalonGoTests;
+			sourceTree = "<group>";
+		};
+		F3FD0DD3293E1C8B00550F18 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DD4293E1CA200550F18 /* Factory */,
+				F3FD0DD7293E1CC800550F18 /* Presenter */,
+				F3FD0DD6293E1CBF00550F18 /* Router */,
+				F3FD0DD5293E1CAF00550F18 /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		F3FD0DD4293E1CA200550F18 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		F3FD0DD5293E1CAF00550F18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3FD0DD6293E1CBF00550F18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F3FD0DD7293E1CC800550F18 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
