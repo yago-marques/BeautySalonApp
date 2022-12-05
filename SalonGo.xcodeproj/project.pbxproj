@@ -52,15 +52,14 @@
 		DF9FBE372931536F00084694 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE362931536F00084694 /* OnboardingPresenter.swift */; };
 		DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */; };
 		DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */; };
+		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
+		DFD69F4B293E3B76009C7933 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
-		F3FD0DD9293E1D7A00550F18 /* RegistrationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DD8293E1D7A00550F18 /* RegistrationFactory.swift */; };
-		F3FD0DDB293E1D9400550F18 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDA293E1D9400550F18 /* RegistrationPresenter.swift */; };
-		F3FD0DDD293E1D9F00550F18 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDC293E1D9F00550F18 /* RegistrationRouter.swift */; };
 		F3FD0DDF293E1DAC00550F18 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */; };
 		F3FD0DE1293E1DB400550F18 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegistrationView.swift */; };
 		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
@@ -123,6 +122,7 @@
 		DF9FBE362931536F00084694 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
+		DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,9 +132,6 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3FD0DD8293E1D7A00550F18 /* RegistrationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFactory.swift; sourceTree = "<group>"; };
-		F3FD0DDA293E1D9400550F18 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
-		F3FD0DDC293E1D9F00550F18 /* RegistrationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
 		F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		F3FD0DE0293E1DB400550F18 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
@@ -145,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +500,14 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		DFD69F49293E3B56009C7933 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -543,20 +549,10 @@
 		F3FD0DD3293E1C8B00550F18 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				F3FD0DD4293E1CA200550F18 /* Factory */,
-				F3FD0DD7293E1CC800550F18 /* Presenter */,
-				F3FD0DD6293E1CBF00550F18 /* Router */,
+				DFD69F49293E3B56009C7933 /* Presenter */,
 				F3FD0DD5293E1CAF00550F18 /* View */,
 			);
 			path = Registration;
-			sourceTree = "<group>";
-		};
-		F3FD0DD4293E1CA200550F18 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				F3FD0DD8293E1D7A00550F18 /* RegistrationFactory.swift */,
-			);
-			path = Factory;
 			sourceTree = "<group>";
 		};
 		F3FD0DD5293E1CAF00550F18 /* View */ = {
@@ -567,22 +563,6 @@
 				F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		F3FD0DD6293E1CBF00550F18 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				F3FD0DDC293E1D9F00550F18 /* RegistrationRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		F3FD0DD7293E1CC800550F18 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				F3FD0DDA293E1D9400550F18 /* RegistrationPresenter.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		F3FD0DE2293E1DC800550F18 /* UI Components */ = {
@@ -610,6 +590,9 @@
 			dependencies = (
 			);
 			name = SalonGo;
+			packageProductDependencies = (
+				DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */,
+			);
 			productName = SalonGo;
 			productReference = F32CFAB7291933440056E794 /* SalonGo.app */;
 			productType = "com.apple.product-type.application";
@@ -661,6 +644,9 @@
 				Base,
 			);
 			mainGroup = F32CFAAE291933440056E794;
+			packageReferences = (
+				DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = F32CFAB8291933440056E794 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -717,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */,
+				DFD69F4B293E3B76009C7933 /* RegistrationPresenter.swift in Sources */,
 				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
 				F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */,
 				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
@@ -748,7 +735,6 @@
 				DF9FBDFD2929311A00084694 /* Keychain.swift in Sources */,
 				F3FD0DDF293E1DAC00550F18 /* RegistrationController.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
-				F3FD0DDB293E1D9400550F18 /* RegistrationPresenter.swift in Sources */,
 				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
@@ -758,9 +744,7 @@
 				DF9FBE372931536F00084694 /* OnboardingPresenter.swift in Sources */,
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
-				F3FD0DDD293E1D9F00550F18 /* RegistrationRouter.swift in Sources */,
 				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
-				F3FD0DD9293E1D7A00550F18 /* RegistrationFactory.swift in Sources */,
 				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
 				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);
@@ -1057,6 +1041,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */ = {

@@ -64,7 +64,7 @@ class PeepTextField: UIView {
         return view
     }()
 
-    private lazy var textfield: UITextField = {
+    lazy var textfield: UITextField = {
         let textfield = UITextField(frame: .zero)
 
         textfield.translatesAutoresizingMaskIntoConstraints = false

@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "input-mask-ios",
+      "identity" : "iqkeyboardmanager",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/RedMadRobot/input-mask-ios",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
       "state" : {
-        "revision" : "40e33ad9fb8cef671f8c4f667f6c0a0043abcbb3",
-        "version" : "6.1.0"
+        "branch" : "master",
+        "revision" : "7399efb730eea084571b45a1a9b36a3a3c54c44f"
       }
     }
   ],

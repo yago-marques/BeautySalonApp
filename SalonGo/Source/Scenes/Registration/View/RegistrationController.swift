@@ -8,22 +8,18 @@
 import UIKit
 
 protocol RegistrationControllerDelegate: AnyObject {
-    func showRegistration()
-    func didTapConfirmButton()
+    func registerIfIsPossible(name: String?, number: String?)
 }
 
 final class RegistrationController: UIViewController {
-    private weak var viewDelegate: RegistrationViewDelegate?
-    private var presenter: RegistrationPresenting
+    private weak var myView: RegistrationView?
 
     init(
-        registrationView: RegistrationView,
-        presenter: RegistrationPresenting
+        registrationView: RegistrationView
     ) {
-        self.viewDelegate = registrationView
-        self.presenter = presenter
+        self.myView = registrationView
         super.init(nibName: nil, bundle: nil)
-        self.view = registrationView
+        self.view = self.myView
     }
 
     @available(*, unavailable)
@@ -31,25 +27,20 @@ final class RegistrationController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setupView()
 
-        presenter.showOnboardingIfNeeded()
+        setupController()
     }
 }
 
 private extension RegistrationController {
-    func setupView() {
-        self.presenter.controller = self
-        self.presenter.router.navigation = self.navigationController
+    func setupController() {
+        self.navigationItem.hidesBackButton = true
+        self.myView?.controllerDelegate = self
     }
 }
 
 extension RegistrationController: RegistrationControllerDelegate {
-    func didTapConfirmButton() {
+    func registerIfIsPossible(name: String?, number: String?) {
 
-    }
-
-    func showRegistration() {
-        viewDelegate?.showRegistration()
     }
 }

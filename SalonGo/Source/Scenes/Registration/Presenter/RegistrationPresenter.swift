@@ -2,34 +2,27 @@
 //  RegistrationPresenter.swift
 //  SalonGo
 //
-//  Created by Milena Lima de Alcântara on 30/11/22.
+//  Created by Yago Marques on 05/12/22.
 //
 
 import Foundation
 
-protocol RegistrationPresenting {
-    var router: RegistrationRouting {get set}
-    var controller: RegistrationControllerDelegate? {get set}
-    func showOnboardingIfNeeded()
-//    func verifyCapturedAction(direction: OnboardingDirection)
+final class RegistrationPresenter {
+
+    func tryRegisterUser(name: String?, phoneNumber: String?) {
+        if let name, let phoneNumber {
+            
+        }
+    }
+
 }
 
-final class RegistrationPresenter: RegistrationPresenting {
-
-    var router: RegistrationRouting
-    weak var controller: RegistrationControllerDelegate?
-
-    init(
-        router: RegistrationRouting,
-        controller: RegistrationControllerDelegate? = nil
-    ) {
-        self.router = router
-        self.controller = controller
+private extension RegistrationPresenter {
+    func nameIsValid(name: String) -> Bool {
+        name.count >= 3
     }
 
-    func showOnboardingIfNeeded() {
-        controller?.showRegistration()
+    func phoneNumberIsVailid(phoneNumber: String) -> Bool {
+        phoneNumber.count == 17
     }
-
-
 }

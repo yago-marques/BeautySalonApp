@@ -20,6 +20,6 @@ final class OnboardingRouter: OnboardingRouting {
     }
 
     func toCatalog() {
-        navigation?.pushViewController(RegistrationFactory.make(), animated: true)
+        navigation?.pushViewController(RegistrationController(registrationView: RegistrationView(frame: UIScreen.main.bounds)), animated: true)
     }
 }

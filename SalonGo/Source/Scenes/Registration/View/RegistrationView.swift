@@ -7,13 +7,8 @@
 
 import UIKit
 
-protocol RegistrationViewDelegate: AnyObject {
-    func showRegistration()
-    func didTapConfirmButton()
-}
-
 class RegistrationView: UIView {
-    private var delegate: RegistrationViewDelegate?
+    var controllerDelegate: RegistrationControllerDelegate?
 
     private lazy var title: UILabel = {
         let label = UILabel(frame: .zero)
@@ -77,30 +72,19 @@ class RegistrationView: UIView {
         return button
     }()
 
-    override init(frame: CGRect) {
+    init(frame: CGRect, delegate: RegistrationControllerDelegate? = nil) {
+        self.controllerDelegate = delegate
         super.init(frame: frame)
+
         buildLayout()
     }
 
     @objc func didTapConfirmButtonTarget() {
-        delegate?.didTapConfirmButton()
+        controllerDelegate?.registerIfIsPossible(name: nameTF.textfield.text, number: telephoneNumberTF.textfield.text)
     }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
-}
-
-extension RegistrationView: RegistrationViewDelegate {
-    func didTapConfirmButton() {
-        print("size 1: \(nameTF.textFieldContentSize())")
-        if nameTF.textFieldContentSize() <= 0 {
-            print("size 2: \(nameTF.textFieldContentSize())")
-        }
-    }
-
-    func showRegistration() {
-        buildLayout()
-    }
 }
 
 extension RegistrationView: ViewCoding {
