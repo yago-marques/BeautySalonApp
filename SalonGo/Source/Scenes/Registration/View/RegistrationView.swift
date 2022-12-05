@@ -9,9 +9,11 @@ import UIKit
 
 protocol RegistrationViewDelegate: AnyObject {
     func showRegistration()
+    func didTapConfirmButton()
 }
 
 class RegistrationView: UIView {
+    private var delegate: RegistrationViewDelegate?
 
     private lazy var title: UILabel = {
         let label = UILabel(frame: .zero)
@@ -41,48 +43,18 @@ class RegistrationView: UIView {
         return label
     }()
 
-    private lazy var nameTF: UITextField = {
-        let textField = UITextField(frame: .zero)
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        textField.keyboardType = .default
-        textField.attributedPlaceholder = NSAttributedString(
-            string: "Nome",
-            attributes: [
-                NSAttributedString.Key.foregroundColor: UIColor.lightGray
-            ]
-        )
-        textField.borderStyle = .roundedRect
-        textField.layer.cornerRadius = 9
-        textField.clipsToBounds = true
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.systemGray.cgColor
-        textField.autocorrectionType = .no
-        textField.autocapitalizationType = .none
+    private lazy var nameTF: PeepTextField = {
+        let textfield = PeepTextField(placeholder: "Nome")
+        textfield.translatesAutoresizingMaskIntoConstraints = false
+        textfield.maskType = .none
 
-        return textField
+        return textfield
     }()
 
-    private lazy var telephoneNumberTF: UITextField = { // try application mask
-        let textField = UITextField(frame: .zero)
+    private lazy var telephoneNumberTF: PeepTextField = {
+        let textField = PeepTextField(placeholder: "Telefone (somente números)")
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.font = UIFont.systemFont(ofSize: 16, weight: .regular)
-        textField.keyboardType = .phonePad
-        textField.attributedPlaceholder = NSAttributedString(
-            string: "Telefone (somente números)",
-            attributes: [
-                NSAttributedString.Key.foregroundColor: UIColor.lightGray
-            ]
-        )
-        textField.borderStyle = .roundedRect
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.systemGray.cgColor
-        // UIColor(named: "OffBlack")?.cgColor
-        textField.layer.cornerRadius = 9
-        textField.clipsToBounds = true
-        textField.autocorrectionType = .no
-        textField.autocapitalizationType = .none
-        textField.textAlignment = .left
+        textField.maskType = .cellphone
 
         return textField
     }()
@@ -96,6 +68,11 @@ class RegistrationView: UIView {
         button.tintColor = UIColor.white
         button.layer.cornerRadius = 9
         button.clipsToBounds = true
+        button.addTarget(
+            self,
+            action: #selector(didTapConfirmButtonTarget),
+            for: .touchUpInside
+        )
 
         return button
     }()
@@ -105,11 +82,22 @@ class RegistrationView: UIView {
         buildLayout()
     }
 
+    @objc func didTapConfirmButtonTarget() {
+        delegate?.didTapConfirmButton()
+    }
+
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
 }
 
 extension RegistrationView: RegistrationViewDelegate {
+    func didTapConfirmButton() {
+        print("size 1: \(nameTF.textFieldContentSize())")
+        if nameTF.textFieldContentSize() <= 0 {
+            print("size 2: \(nameTF.textFieldContentSize())")
+        }
+    }
+
     func showRegistration() {
         buildLayout()
     }

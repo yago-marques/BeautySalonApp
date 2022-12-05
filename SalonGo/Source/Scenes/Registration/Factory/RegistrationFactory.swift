@@ -13,7 +13,6 @@ struct RegistrationFactory {
         let view = RegistrationView(frame: UIScreen.main.bounds)
         let presenter = RegistrationPresenter(router: RegistrationRouter())
         let registration = RegistrationController(registrationView: view, presenter: presenter)
-//        view.controller = registration
         return registration
     }
 }
