@@ -11,7 +11,7 @@ protocol RegistrationControllerDelegate: AnyObject {
     func registerIfIsPossible(name: String?, number: String?)
 }
 
-final class RegistrationController: UIViewController {
+final class RegisterController: UIViewController {
     private weak var myView: RegistrationView?
 
     init(
@@ -32,14 +32,14 @@ final class RegistrationController: UIViewController {
     }
 }
 
-private extension RegistrationController {
+private extension RegisterController {
     func setupController() {
         self.navigationItem.hidesBackButton = true
         self.myView?.controllerDelegate = self
     }
 }
 
-extension RegistrationController: RegistrationControllerDelegate {
+extension RegisterController: RegistrationControllerDelegate {
     func registerIfIsPossible(name: String?, number: String?) {
 
     }

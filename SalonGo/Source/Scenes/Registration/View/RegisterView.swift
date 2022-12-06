@@ -7,8 +7,8 @@
 
 import UIKit
 
-class RegistrationView: UIView {
-    var controllerDelegate: RegistrationControllerDelegate?
+class RegisterView: UIView {
+    var controllerDelegate: RegisterControllerDelegate?
 
     private lazy var title: UILabel = {
         let label = UILabel(frame: .zero)
@@ -72,7 +72,7 @@ class RegistrationView: UIView {
         return button
     }()
 
-    init(frame: CGRect, delegate: RegistrationControllerDelegate? = nil) {
+    init(frame: CGRect, delegate: RegisterControllerDelegate? = nil) {
         self.controllerDelegate = delegate
         super.init(frame: frame)
 
@@ -87,7 +87,7 @@ class RegistrationView: UIView {
     required init?(coder: NSCoder) { nil }
 }
 
-extension RegistrationView: ViewCoding {
+extension RegisterView: ViewCoding {
     func setupView() {
         self.backgroundColor = .systemBackground
     }
