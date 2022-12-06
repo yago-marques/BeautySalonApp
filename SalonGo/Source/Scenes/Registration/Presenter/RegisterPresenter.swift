@@ -9,20 +9,23 @@ import Foundation
 
 protocol RegisterPresenting: AnyObject {
     var controller: RegisterControlling? { get set }
+    var router: RegisterRouting { get set }
     func tryRegisterUser(name: String?, phoneNumber: String?)
 }
 
 final class RegisterPresenter: RegisterPresenting {
-
     weak var controller: RegisterControlling?
     private let interactor: RegisterInteracting?
+    internal var router: RegisterRouting
 
     init(
         controller: RegisterControlling? = nil,
-        interactor: RegisterInteracting
+        interactor: RegisterInteracting,
+        router: RegisterRouting
     ) {
         self.controller = controller
         self.interactor = interactor
+        self.router = router
     }
 
     func tryRegisterUser(name: String?, phoneNumber: String?) {
@@ -41,6 +44,7 @@ final class RegisterPresenter: RegisterPresenting {
         if isPossible {
             do {
                 try saveUser(name: name, phone: phoneNumber)
+                router.toCatalog()
             } catch {
                 print(error)
             }

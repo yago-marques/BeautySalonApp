@@ -42,6 +42,8 @@ final class OnboardingController: UIViewController {
         super.viewWillAppear(animated)
         self.setupView()
 
+//       deleteUser()
+
         presenter.showOnboardingIfNeeded()
     }
 }
@@ -50,6 +52,16 @@ private extension OnboardingController {
     func setupView() {
         self.presenter.controller = self
         self.presenter.router.navigation = self.navigationController
+    }
+
+    func deleteUser() {
+        let coredata = CoreDataClient()
+
+        do {
+            try coredata.deleteUser()
+        } catch {
+            print(error)
+        }
     }
 }
 

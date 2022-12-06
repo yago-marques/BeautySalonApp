@@ -21,17 +21,25 @@ enum OnboardingPage {
 final class OnboardingPresenter: OnboardingPresenting {
     var router: OnboardingRouting
     weak var controller: OnboardingControllerDelegate?
+    private let interactor: OnboardingInteracting
 
     init(
         router: OnboardingRouting,
-        controller: OnboardingControllerDelegate? = nil
+        controller: OnboardingControllerDelegate? = nil,
+        interactor: OnboardingInteracting
     ) {
         self.router = router
         self.controller = controller
+        self.interactor = interactor
     }
 
     func showOnboardingIfNeeded() {
-        controller?.showOnboarding()
+        print(interactor.userAlreadyExists())
+        if interactor.userAlreadyExists() {
+            router.toCatalog()
+        } else {
+            controller?.showOnboarding()
+        }
     }
 
     func verifyCapturedAction(direction: OnboardingDirection) {
@@ -54,7 +62,7 @@ final class OnboardingPresenter: OnboardingPresenting {
         case .three:
             switch direction {
             case .next:
-                router.toCatalog()
+                router.toRegister()
             case .prev:
                 controller?.displayScreen(at: 2)
                 controller?.setup(buttonTitle: "Próximo")

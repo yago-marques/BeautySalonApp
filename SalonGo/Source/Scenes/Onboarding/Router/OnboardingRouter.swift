@@ -9,6 +9,7 @@ import UIKit
 
 protocol OnboardingRouting {
     var navigation: UINavigationController? { get set }
+    func toRegister()
     func toCatalog()
 }
 
@@ -19,17 +20,22 @@ final class OnboardingRouter: OnboardingRouting {
         self.navigation = navigation
     }
 
-    func toCatalog() {
+    func toRegister() {
         navigation?.pushViewController(
             RegisterController(
                 registerView: RegisterView(frame: UIScreen.main.bounds),
                 presenter: RegisterPresenter(
                     interactor: RegisterInteractor(
                         coreData: CoreDataClient()
-                    )
+                    ),
+                    router: RegisterRouter()
                 )
             ),
             animated: true
         )
+    }
+
+    func toCatalog() {
+        navigation?.pushViewController(ViewController(), animated: true)
     }
 }

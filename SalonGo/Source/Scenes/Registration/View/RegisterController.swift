@@ -44,6 +44,7 @@ private extension RegisterController {
         self.navigationItem.hidesBackButton = true
         self.myView?.controllerDelegate = self
         self.presenter?.controller = self
+        self.presenter?.router.navigation = self.navigationController
     }
 }
 

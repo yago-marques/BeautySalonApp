@@ -10,7 +10,12 @@ import UIKit
 struct OnboardingFactory {
     static func make() -> UIViewController {
         let view = OnboardingView(frame: UIScreen.main.bounds)
-        let presenter = OnboardingPresenter(router: OnboardingRouter())
+        let presenter = OnboardingPresenter(
+            router: OnboardingRouter(),
+            interactor: OnboardingInteractor(
+                coreData: CoreDataClient()
+            )
+        )
         let onboarding = OnboardingController(onboardingView: view, presenter: presenter)
         view.controller = onboarding
 

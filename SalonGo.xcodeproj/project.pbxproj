@@ -64,6 +64,7 @@
 		F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegisterView.swift */; };
 		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
 		F3FD0DEB293F723B00550F18 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */; };
+		F3FD0DEE293F80BA00550F18 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		F3FD0DE0293E1DB400550F18 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
 		F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterInteractor.swift; path = ../../../../../../../../../Personal/mobile/aplicativo/Auralize/Auralize/Resources/Source/View/Measure/Free/RegisterInteractor.swift; sourceTree = "<group>"; };
+		F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,6 +553,7 @@
 		F3FD0DD3293E1C8B00550F18 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F3FD0DEC293F80A600550F18 /* Router */,
 				F3FD0DE9293F721E00550F18 /* Interactor */,
 				DFD69F49293E3B56009C7933 /* Presenter */,
 				F3FD0DD5293E1CAF00550F18 /* View */,
@@ -582,6 +585,14 @@
 				F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3FD0DEC293F80A600550F18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +759,7 @@
 				F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
+				F3FD0DEE293F80BA00550F18 /* RegisterRouter.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF9FBDD82929177B00084694 /* KeychainClient.swift in Sources */,

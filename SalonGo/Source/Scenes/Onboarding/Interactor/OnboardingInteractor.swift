@@ -7,10 +7,25 @@
 
 import Foundation
 
-final class OnboardingInteractor {
-    private let presenter: OnboardingPresenter
+protocol OnboardingInteracting: AnyObject {
+    func userAlreadyExists() -> Bool
+}
 
-    init(presenter: OnboardingPresenter) {
-        self.presenter = presenter
+final class OnboardingInteractor {
+    private let coreData: UserDBManager
+
+    init(coreData: UserDBManager) {
+        self.coreData = coreData
+    }
+}
+
+extension OnboardingInteractor: OnboardingInteracting {
+    func userAlreadyExists() -> Bool {
+        do {
+            let user = try coreData.fetchUser()
+            return user.count != 0
+        } catch {
+            return false
+        }
     }
 }
