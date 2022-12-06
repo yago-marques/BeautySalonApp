@@ -55,6 +55,7 @@
 		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
 		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
 		DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */; };
+		DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A25293FC2B100B9606C /* RegisterFactory.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -126,6 +127,7 @@
 		DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
 		DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		DFF03A25293FC2B100B9606C /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			children = (
 				DF18BFD7291AE21300C0570A /* Util */,
 				DF699E7E291AD56000EF7C78 /* Client */,
+				DF9FBE0C292BFE6200084694 /* Entity */,
 				DF9FBE262930DD0A00084694 /* Scenes */,
 				F32CFABE291933440056E794 /* ViewController.swift */,
 			);
@@ -427,7 +430,7 @@
 		DF9FBE262930DD0A00084694 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F3FD0DD3293E1C8B00550F18 /* Registration */,
+				F3FD0DD3293E1C8B00550F18 /* Register */,
 				DF9FBE272930DEBD00084694 /* Onboarding */,
 			);
 			path = Scenes;
@@ -440,7 +443,6 @@
 				DF9FBE3A29315BC100084694 /* View */,
 				DF9FBE3C29315BF200084694 /* Interactor */,
 				DF9FBE3B29315BDD00084694 /* Presenter */,
-				DF9FBE0C292BFE6200084694 /* Entity */,
 				DF9FBE3D29315C3F00084694 /* Router */,
 			);
 			path = Onboarding;
@@ -512,6 +514,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		DFF03A24293FC27000B9606C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A25293FC2B100B9606C /* RegisterFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -550,15 +560,16 @@
 			path = SalonGoTests;
 			sourceTree = "<group>";
 		};
-		F3FD0DD3293E1C8B00550F18 /* Registration */ = {
+		F3FD0DD3293E1C8B00550F18 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				F3FD0DEC293F80A600550F18 /* Router */,
+				DFF03A24293FC27000B9606C /* Factory */,
+				F3FD0DD5293E1CAF00550F18 /* View */,
 				F3FD0DE9293F721E00550F18 /* Interactor */,
 				DFD69F49293E3B56009C7933 /* Presenter */,
-				F3FD0DD5293E1CAF00550F18 /* View */,
+				F3FD0DEC293F80A600550F18 /* Router */,
 			);
-			path = Registration;
+			path = Register;
 			sourceTree = "<group>";
 		};
 		F3FD0DD5293E1CAF00550F18 /* View */ = {
@@ -769,6 +780,7 @@
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
 				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
+				DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */,
 				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
 				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);

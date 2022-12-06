@@ -21,18 +21,7 @@ final class OnboardingRouter: OnboardingRouting {
     }
 
     func toRegister() {
-        navigation?.pushViewController(
-            RegisterController(
-                registerView: RegisterView(frame: UIScreen.main.bounds),
-                presenter: RegisterPresenter(
-                    interactor: RegisterInteractor(
-                        coreData: CoreDataClient()
-                    ),
-                    router: RegisterRouter()
-                )
-            ),
-            animated: true
-        )
+        navigation?.pushViewController(RegisterFactory.make(), animated: true)
     }
 
     func toCatalog() {
