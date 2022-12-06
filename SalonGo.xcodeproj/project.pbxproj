@@ -54,6 +54,7 @@
 		DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */; };
 		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
 		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
+		DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -63,7 +64,6 @@
 		F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */; };
 		F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegisterView.swift */; };
 		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
-		F3FD0DEB293F723B00550F18 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */; };
 		F3FD0DEE293F80BA00550F18 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +125,7 @@
 		DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
 		DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,7 +138,6 @@
 		F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F3FD0DE0293E1DB400550F18 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
-		F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterInteractor.swift; path = ../../../../../../../../../Personal/mobile/aplicativo/Auralize/Auralize/Resources/Source/View/Measure/Free/RegisterInteractor.swift; sourceTree = "<group>"; };
 		F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -582,7 +582,7 @@
 		F3FD0DE9293F721E00550F18 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */,
+				DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -741,11 +741,11 @@
 				DF9FBE002929316D00084694 /* KeychainProtocol.swift in Sources */,
 				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
 				DF9FBE2C2930DFB300084694 /* OnboardingView.swift in Sources */,
+				DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */,
 				DF9FBE322930E39400084694 /* OnboardingCell.swift in Sources */,
 				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
 				DF9FBE2A2930DEF400084694 /* OnboardingController.swift in Sources */,
 				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
-				F3FD0DEB293F723B00550F18 /* RegisterInteractor.swift in Sources */,
 				DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */,
 				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
 				DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */,
