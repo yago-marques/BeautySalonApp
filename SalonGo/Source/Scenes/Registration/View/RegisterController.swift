@@ -7,17 +7,24 @@
 
 import UIKit
 
-protocol RegistrationControllerDelegate: AnyObject {
+protocol RegisterControllerDelegate: AnyObject {
     func registerIfIsPossible(name: String?, number: String?)
 }
 
+protocol RegisterControlling: AnyObject {
+    func textFieldToRed(_ textField: TextFields)
+}
+
 final class RegisterController: UIViewController {
-    private weak var myView: RegistrationView?
+    private weak var myView: RegisterView?
+    private let presenter: RegisterPresenting?
 
     init(
-        registrationView: RegistrationView
+        registerView: RegisterView,
+        presenter: RegisterPresenter
     ) {
-        self.myView = registrationView
+        self.myView = registerView
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
         self.view = self.myView
     }
@@ -36,11 +43,18 @@ private extension RegisterController {
     func setupController() {
         self.navigationItem.hidesBackButton = true
         self.myView?.controllerDelegate = self
+        self.presenter?.controller = self
     }
 }
 
-extension RegisterController: RegistrationControllerDelegate {
+extension RegisterController: RegisterControllerDelegate {
     func registerIfIsPossible(name: String?, number: String?) {
+        presenter?.tryRegisterUser(name: name, phoneNumber: number)
+    }
+}
 
+extension RegisterController: RegisterControlling {
+    func textFieldToRed(_ textField: TextFields) {
+        myView?.turnTextFieldRed(textField)
     }
 }

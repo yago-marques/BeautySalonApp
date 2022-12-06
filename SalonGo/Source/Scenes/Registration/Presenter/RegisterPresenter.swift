@@ -7,21 +7,36 @@
 
 import Foundation
 
-protocol RegistrationPresenting: AnyObject {
+protocol RegisterPresenting: AnyObject {
     var controller: RegisterControlling? { get set }
     func tryRegisterUser(name: String?, phoneNumber: String?)
 }
 
-final class RegisterPresenter: RegistrationPresenting {
+final class RegisterPresenter: RegisterPresenting {
 
     weak var controller: RegisterControlling?
 
-    init(controller: RegisterControlling) {
+    init(controller: RegisterControlling? = nil) {
         self.controller = controller
     }
 
     func tryRegisterUser(name: String?, phoneNumber: String?) {
-        print("here")
+        var isPossible: Bool = true
+
+        if !nameIsValid(name) {
+            controller?.textFieldToRed(.name)
+            isPossible = false
+        }
+
+        if !phoneNumberIsVailid(phoneNumber) {
+            controller?.textFieldToRed(.phoneNumber)
+            isPossible = false
+        }
+
+        if isPossible {
+            print("save")
+        }
+
     }
 
 }
@@ -38,7 +53,7 @@ private extension RegisterPresenter {
     }
 
     func phoneNumberIsVailid(_ phoneNumber: String?) -> Bool {
-        if let phoneNumber, phoneNumber.count == 17 {
+        if let phoneNumber, phoneNumber.count == 16 {
             return true
         } else {
             return false

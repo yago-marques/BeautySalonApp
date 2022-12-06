@@ -7,7 +7,15 @@
 
 import UIKit
 
-class RegisterView: UIView {
+enum TextFields {
+    case name, phoneNumber
+}
+
+protocol RegisterViewDelegate: AnyObject {
+    func turnTextFieldRed(_ textField: TextFields)
+}
+
+final class RegisterView: UIView {
     var controllerDelegate: RegisterControllerDelegate?
 
     private lazy var title: UILabel = {
@@ -16,7 +24,7 @@ class RegisterView: UIView {
         label.font = UIFont.systemFont(ofSize: 26, weight: .bold)
         label.text = "Sua identificação"
         label.textAlignment = .center
-        label.textColor = UIColor(named: "Pink") ?? UIColor.black
+        label.textColor = UIColor(named: "Pink")
 
         return label
     }()
@@ -33,7 +41,7 @@ class RegisterView: UIView {
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.textColor = UIColor(named: "OffBlack") ?? UIColor.black
+        label.textColor = UIColor(named: "OffBlack")
 
         return label
     }()
@@ -85,6 +93,17 @@ class RegisterView: UIView {
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
+}
+
+extension RegisterView: RegisterViewDelegate {
+    func turnTextFieldRed(_ textField: TextFields) {
+        switch textField {
+        case .name:
+            nameTF.borderRed()
+        case .phoneNumber:
+            telephoneNumberTF.borderRed()
+        }
+    }
 }
 
 extension RegisterView: ViewCoding {

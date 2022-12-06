@@ -20,6 +20,12 @@ final class OnboardingRouter: OnboardingRouting {
     }
 
     func toCatalog() {
-        navigation?.pushViewController(RegistrationController(registrationView: RegistrationView(frame: UIScreen.main.bounds)), animated: true)
+        navigation?.pushViewController(
+            RegisterController(
+                registerView: RegisterView(frame: UIScreen.main.bounds),
+                presenter: RegisterPresenter()
+            ),
+            animated: true
+        )
     }
 }

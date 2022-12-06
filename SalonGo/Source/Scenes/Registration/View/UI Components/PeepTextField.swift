@@ -83,6 +83,7 @@ class PeepTextField: UIView {
         textfield.clipsToBounds = true
         textfield.autocorrectionType = .no
         textfield.autocapitalizationType = .none
+        textfield.delegate = self
 
         textfield.addTarget(self, action: #selector(textfieldChaged(_:)), for: .editingChanged)
 
@@ -100,9 +101,40 @@ class PeepTextField: UIView {
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
 
+    func borderRed() {
+        self.textfield.layer.borderColor = UIColor.systemRed.cgColor
+    }
+
+    func textFieldContentSize() -> Int {
+        guard let text = textfield.text else { return 0 }
+        return text.count
+    }
+
+}
+
+extension PeepTextField: UITextFieldDelegate {
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.systemGray.cgColor
+
+    }
+}
+
+@objc extension PeepTextField {
+    /// Função reponsável por aplicar ações conforme o usuário digita
+    /// - Parameter textfield: Textfield sofrendo edição
+    func textfieldChaged(_ textfield: UITextField) {
+        guard let text = textfield.text else { return }
+        applyMaskToText(text: text, apply: maskType.mask)
+        if let maxChars = maskType.maximumChars, text.count > maxChars {
+            _ = textfield.text?.dropLast()
+        }
+    }
+}
+
+private extension PeepTextField {
     /// Função responsável por retirar todos os símbolo e somente manter números e letras
     /// - Parameter text: String para Formatar
-    private func getOnlyDigitsFromString(text: String) -> String {
+    func getOnlyDigitsFromString(text: String) -> String {
         return text.replacingOccurrences(of: "\\D", with: "", options: .regularExpression)
     }
 
@@ -110,7 +142,7 @@ class PeepTextField: UIView {
     /// - Parameters:
     ///   - text: Texto para aplicar
     ///   - mask: Máscara para ser aplicada
-    private func applyMaskToText(text: String, apply mask: String?) {
+    func applyMaskToText(text: String, apply mask: String?) {
         var masked = ""
         var textIndex = 0
         var maskIndex = 0
@@ -136,22 +168,6 @@ class PeepTextField: UIView {
 
         textfield.text = masked
     }
-
-    /// Função reponsável por aplicar ações conforme o usuário digita
-    /// - Parameter textfield: Textfield sofrendo edição
-    @objc func textfieldChaged(_ textfield: UITextField) {
-        guard let text = textfield.text else { return }
-        applyMaskToText(text: text, apply: maskType.mask)
-        if let maxChars = maskType.maximumChars, text.count > maxChars {
-            _ = textfield.text?.dropLast()
-        }
-    }
-
-    func textFieldContentSize() -> Int {
-        guard let text = textfield.text else { return 0 }
-        return text.count
-    }
-
 }
 
 extension PeepTextField: ViewCoding {

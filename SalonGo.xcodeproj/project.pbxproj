@@ -53,15 +53,15 @@
 		DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */; };
 		DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */; };
 		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
-		DFD69F4B293E3B76009C7933 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */; };
+		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
-		F3FD0DDF293E1DAC00550F18 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */; };
-		F3FD0DE1293E1DB400550F18 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegistrationView.swift */; };
+		F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */; };
+		F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegisterView.swift */; };
 		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,7 +122,7 @@
 		DF9FBE362931536F00084694 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
 		DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
-		DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
-		F3FD0DE0293E1DB400550F18 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		F3FD0DE0293E1DB400550F18 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -503,7 +503,7 @@
 		DFD69F49293E3B56009C7933 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				DFD69F4A293E3B76009C7933 /* RegistrationPresenter.swift */,
+				DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -559,8 +559,8 @@
 			isa = PBXGroup;
 			children = (
 				F3FD0DE2293E1DC800550F18 /* UI Components */,
-				F3FD0DE0293E1DB400550F18 /* RegistrationView.swift */,
-				F3FD0DDE293E1DAC00550F18 /* RegistrationController.swift */,
+				F3FD0DE0293E1DB400550F18 /* RegisterView.swift */,
+				F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -703,7 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */,
-				DFD69F4B293E3B76009C7933 /* RegistrationPresenter.swift in Sources */,
+				DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */,
 				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
 				F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */,
 				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
@@ -729,11 +729,11 @@
 				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
 				DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */,
-				F3FD0DE1293E1DB400550F18 /* RegistrationView.swift in Sources */,
+				F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */,
 				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
 				DF9FBE2F2930E25000084694 /* ViewCoding.swift in Sources */,
 				DF9FBDFD2929311A00084694 /* Keychain.swift in Sources */,
-				F3FD0DDF293E1DAC00550F18 /* RegistrationController.swift in Sources */,
+				F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
