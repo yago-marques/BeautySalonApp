@@ -15,9 +15,14 @@ protocol RegisterPresenting: AnyObject {
 final class RegisterPresenter: RegisterPresenting {
 
     weak var controller: RegisterControlling?
+    private let interactor: RegisterInteracting?
 
-    init(controller: RegisterControlling? = nil) {
+    init(
+        controller: RegisterControlling? = nil,
+        interactor: RegisterInteracting
+    ) {
         self.controller = controller
+        self.interactor = interactor
     }
 
     func tryRegisterUser(name: String?, phoneNumber: String?) {
@@ -34,14 +39,40 @@ final class RegisterPresenter: RegisterPresenting {
         }
 
         if isPossible {
-            print("save")
+            do {
+                try saveUser(name: name, phone: phoneNumber)
+            } catch {
+                print(error)
+            }
         }
 
     }
 
 }
 
+enum PresenterError: Error {
+    case invalidParser
+}
+
 private extension RegisterPresenter {
+    func saveUser(name: String?, phone: String?) throws {
+        guard let name, let phone else {
+            throw PresenterError.invalidParser
+        }
+
+        let user: User = .init(
+            name: name,
+            phoneNumber: phone,
+            createdAt: Date(),
+            updatedAt: Date()
+        )
+
+        do {
+            try interactor?.saveUser(with: user)
+        } catch {
+            throw error
+        }
+    }
 
     func nameIsValid(_ name: String?) -> Bool {
         if let name, name.count >= 3 {

@@ -63,6 +63,7 @@
 		F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */; };
 		F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegisterView.swift */; };
 		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
+		F3FD0DEB293F723B00550F18 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F3FD0DE0293E1DB400550F18 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
+		F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterInteractor.swift; path = ../../../../../../../../../Personal/mobile/aplicativo/Auralize/Auralize/Resources/Source/View/Measure/Free/RegisterInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +551,7 @@
 		F3FD0DD3293E1C8B00550F18 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				F3FD0DE9293F721E00550F18 /* Interactor */,
 				DFD69F49293E3B56009C7933 /* Presenter */,
 				F3FD0DD5293E1CAF00550F18 /* View */,
 			);
@@ -571,6 +574,14 @@
 				F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		F3FD0DE9293F721E00550F18 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DEA293F723B00550F18 /* RegisterInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -723,6 +734,7 @@
 				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
 				DF9FBE2A2930DEF400084694 /* OnboardingController.swift in Sources */,
 				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
+				F3FD0DEB293F723B00550F18 /* RegisterInteractor.swift in Sources */,
 				DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */,
 				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
 				DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */,

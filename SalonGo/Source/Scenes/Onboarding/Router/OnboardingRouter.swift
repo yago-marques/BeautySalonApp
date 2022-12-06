@@ -23,7 +23,11 @@ final class OnboardingRouter: OnboardingRouting {
         navigation?.pushViewController(
             RegisterController(
                 registerView: RegisterView(frame: UIScreen.main.bounds),
-                presenter: RegisterPresenter()
+                presenter: RegisterPresenter(
+                    interactor: RegisterInteractor(
+                        coreData: CoreDataClient()
+                    )
+                )
             ),
             animated: true
         )
