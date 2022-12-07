@@ -26,13 +26,14 @@ final class OnboardingController: UIViewController {
     private var presenter: OnboardingPresenting
 
     init(
-        onboardingView: OnboardingView,
+        uiView: UIView,
+        viewDelegate: OnboardingViewDelegate,
         presenter: OnboardingPresenting
     ) {
-        self.viewDelegate = onboardingView
+        self.viewDelegate = viewDelegate
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
-        self.view = onboardingView
+        self.view = uiView
     }
 
     @available(*, unavailable)

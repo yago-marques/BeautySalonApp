@@ -56,6 +56,9 @@
 		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
 		DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */; };
 		DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A25293FC2B100B9606C /* RegisterFactory.swift */; };
+		DFF03A2E293FC68500B9606C /* OnboardingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */; };
+		DFF03A30293FC6C500B9606C /* OnboardingPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */; };
+		DFF03A33293FCA8900B9606C /* OnboardingViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -128,6 +131,9 @@
 		DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		DFF03A25293FC2B100B9606C /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
+		DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingControllerTests.swift; sourceTree = "<group>"; };
+		DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterSpy.swift; sourceTree = "<group>"; };
+		DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewMock.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				DF18BFF3291B2CC800C0570A /* Client */,
+				DFF03A27293FC59100B9606C /* Scenes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -522,6 +529,40 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		DFF03A27293FC59100B9606C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A28293FC59B00B9606C /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DFF03A28293FC59B00B9606C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2C293FC65500B9606C /* TestsDoubles */,
+				DFF03A29293FC5B600B9606C /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DFF03A29293FC5B600B9606C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFF03A2C293FC65500B9606C /* TestsDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */,
+				DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */,
+			);
+			path = TestsDoubles;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +832,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
+				DFF03A30293FC6C500B9606C /* OnboardingPresenterSpy.swift in Sources */,
+				DFF03A33293FCA8900B9606C /* OnboardingViewMock.swift in Sources */,
+				DFF03A2E293FC68500B9606C /* OnboardingControllerTests.swift in Sources */,
 				DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */,
 				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
 				DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */,

@@ -16,7 +16,11 @@ struct OnboardingFactory {
                 coreData: CoreDataClient()
             )
         )
-        let onboarding = OnboardingController(onboardingView: view, presenter: presenter)
+        let onboarding = OnboardingController(
+            uiView: view,
+            viewDelegate: view,
+            presenter: presenter
+        )
         view.controller = onboarding
 
         return onboarding
