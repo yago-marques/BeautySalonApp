@@ -32,5 +32,4 @@ final class OnboardingPresenterSpy: OnboardingPresenting {
         receivedMessages.append(.verifyCapturedAction(direction: direction))
     }
 
-
 }

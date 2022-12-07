@@ -59,6 +59,9 @@
 		DFF03A2E293FC68500B9606C /* OnboardingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */; };
 		DFF03A30293FC6C500B9606C /* OnboardingPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */; };
 		DFF03A33293FCA8900B9606C /* OnboardingViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */; };
+		DFF03A482940D96800B9606C /* CKAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A472940D96800B9606C /* CKAdmin.swift */; };
+		DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A492940DA7900B9606C /* AdminEntity.swift */; };
+		DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -134,6 +137,9 @@
 		DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingControllerTests.swift; sourceTree = "<group>"; };
 		DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterSpy.swift; sourceTree = "<group>"; };
 		DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewMock.swift; sourceTree = "<group>"; };
+		DFF03A472940D96800B9606C /* CKAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAdmin.swift; sourceTree = "<group>"; };
+		DFF03A492940DA7900B9606C /* AdminEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminEntity.swift; sourceTree = "<group>"; };
+		DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypoKitClient.swift; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -252,6 +258,7 @@
 		DF18BFFE291BC99F00C0570A /* CKEntity */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A492940DA7900B9606C /* AdminEntity.swift */,
 				DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */,
 				DF18C001291BCA0D00C0570A /* UserEntity.swift */,
 				DF18C003291BCABC00C0570A /* ServiceEntity.swift */,
@@ -295,6 +302,7 @@
 		DF699E7E291AD56000EF7C78 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A4B2940F8EC00B9606C /* CryptoKit */,
 				DF9FBE0F292BFED900084694 /* CoreData */,
 				DF9FBDD62929175F00084694 /* Keychain */,
 				DF699E7F291AD57500EF7C78 /* CloudKit */,
@@ -317,6 +325,7 @@
 		DF699E82291AD6B000EF7C78 /* CKModel */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A472940D96800B9606C /* CKAdmin.swift */,
 				DF699E83291AD6C400EF7C78 /* CKAccount.swift */,
 				DF18BFDC291AE87B00C0570A /* CKUser.swift */,
 				DF18BFDE291AE91500C0570A /* CKCompany.swift */,
@@ -563,6 +572,14 @@
 			path = TestsDoubles;
 			sourceTree = "<group>";
 		};
+		DFF03A4B2940F8EC00B9606C /* CryptoKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */,
+			);
+			path = CryptoKit;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -781,9 +798,11 @@
 				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
 				F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */,
 				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
+				DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */,
 				DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */,
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
 				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
+				DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */,
 				DF9FBE032929362B00084694 /* QueryProtocol.swift in Sources */,
 				DF9FBE14292C0C6300084694 /* CoreDataStack.swift in Sources */,
 				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
@@ -799,6 +818,7 @@
 				DF9FBE2A2930DEF400084694 /* OnboardingController.swift in Sources */,
 				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
 				DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */,
+				DFF03A482940D96800B9606C /* CKAdmin.swift in Sources */,
 				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
 				DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */,
 				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,

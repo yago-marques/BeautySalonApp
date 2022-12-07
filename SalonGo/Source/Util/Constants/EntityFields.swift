@@ -17,6 +17,8 @@ struct EntityFields {
         "updatedAt"
     ]
 
+    let admin = ["hash"]
+
     let user = [
         "id",
         "name",

@@ -20,8 +20,6 @@ final class OnboardingControllerTests: XCTestCase {
         XCTAssertEqual(doubles.viewMock.receivedMessages, [.setup(buttonTitle: title)])
     }
 
-    
-
 }
 
 extension OnboardingControllerTests {

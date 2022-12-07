@@ -34,7 +34,6 @@ final class OnboardingPresenter: OnboardingPresenting {
     }
 
     func showOnboardingIfNeeded() {
-        print(interactor.userAlreadyExists())
         if interactor.userAlreadyExists() {
             router.toCatalog()
         } else {

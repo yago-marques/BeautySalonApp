@@ -15,6 +15,6 @@ protocol RemoteClient: AnyObject {
 
     func read(
         at recordType: CloudKitEntityTypes,
-        completion: @escaping (Result<CKStructProtocol, Error>) -> Void
+        completion: @escaping (Result<[CKStructProtocol], Error>) -> Void
     )
 }

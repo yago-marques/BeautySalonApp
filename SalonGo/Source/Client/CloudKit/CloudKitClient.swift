@@ -30,25 +30,28 @@ final class CloudKitClient: RemoteClient {
 
     func read(
         at recordType: CloudKitEntityTypes,
-        completion: @escaping (Result<CKStructProtocol, Error>) -> Void
+        completion: @escaping (Result<[CKStructProtocol], Error>) -> Void
     ) {
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: recordType.rawValue, predicate: predicate)
 
         container.fetch(withQuery: query) { result in
             if case let .success(allResults) = result {
+                var protocolStructs = [CKStructProtocol]()
                 for matchResult in allResults.matchResults {
                     let recordInfo = matchResult.1
                     if case let .success(record) = recordInfo {
                         if
                             let entity = self.getEntity(record: record, type: recordType)
                         {
-                            completion(.success(entity))
+                            protocolStructs.append(entity)
                         } else {
                             completion(.failure(CloudKitError.invalidEntity))
                         }
                     }
                 }
+
+                completion(.success(protocolStructs))
             }
         }
 
@@ -86,6 +89,8 @@ private extension CloudKitClient {
             result = CKService.makeWithRecord(record: record)
         case .appointment:
             result = CKAppointment.makeWithRecord(record: record)
+        case .admin:
+            result = CKAdmin.makeWithRecord(record: record)
         }
 
         return result

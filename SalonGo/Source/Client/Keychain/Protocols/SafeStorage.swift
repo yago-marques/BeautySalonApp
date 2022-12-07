@@ -11,4 +11,5 @@ protocol SafeStorage {
     func create(token: Data) throws
     func read() throws -> String?
     func delete() throws
+    func update(token: Data) throws
 }

@@ -43,8 +43,6 @@ final class OnboardingController: UIViewController {
         super.viewWillAppear(animated)
         self.setupView()
 
-//       deleteUser()
-
         presenter.showOnboardingIfNeeded()
     }
 }
@@ -57,9 +55,11 @@ private extension OnboardingController {
 
     func deleteUser() {
         let coredata = CoreDataClient()
+        let keychain = KeychainClient()
 
         do {
             try coredata.deleteUser()
+            try keychain.delete()
         } catch {
             print(error)
         }

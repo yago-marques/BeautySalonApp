@@ -66,6 +66,20 @@ final class KeychainClient: SafeStorage {
         return token
     }
 
+    func update(token: Data) throws {
+        let query = queryManager.getGenericQuery()
+
+        let attributes: [String: AnyObject] = [
+            kSecValueData as String: token as AnyObject
+        ]
+
+        let status = keychain.update(query, with: attributes)
+
+        guard status == errSecSuccess else {
+            throw KeychainError.unexpectedStatus(status)
+        }
+    }
+
     func delete() throws {
         let query = queryManager.getGenericQuery()
 
@@ -85,20 +99,6 @@ private extension KeychainClient {
             return true
         } catch {
             return false
-        }
-    }
-
-    private func update(token: Data) throws {
-        let query = queryManager.getGenericQuery()
-
-        let attributes: [String: AnyObject] = [
-            kSecValueData as String: token as AnyObject
-        ]
-
-        let status = keychain.update(query, with: attributes)
-
-        guard status == errSecSuccess else {
-            throw KeychainError.unexpectedStatus(status)
         }
     }
 }

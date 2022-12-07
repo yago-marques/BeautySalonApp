@@ -8,6 +8,7 @@
 import Foundation
 
 enum CloudKitEntityTypes: String {
+    case admin = "Admin"
     case account = "Account"
     case user = "User"
     case company = "Company"
@@ -38,6 +39,8 @@ extension CKEntityProtocol {
             keys = EntityFields().service
         case .appointment:
             keys = EntityFields().appointment
+        case .admin:
+            keys = EntityFields().admin
         }
 
         return keys
@@ -59,6 +62,8 @@ extension CKEntityProtocol {
         case .service:
             values = readObjectValues(at: object)
         case .appointment:
+            values = readObjectValues(at: object)
+        case .admin:
             values = readObjectValues(at: object)
         }
 
@@ -83,6 +88,8 @@ private extension CKEntityProtocol {
             object = try? JSONDecoder().decode(CKService.self, from: self.body)
         case .appointment:
             object = try? JSONDecoder().decode(CKAppointment.self, from: self.body)
+        case .admin:
+            object = try? JSONDecoder().decode(CKAdmin.self, from: self.body)
         }
 
         return object
