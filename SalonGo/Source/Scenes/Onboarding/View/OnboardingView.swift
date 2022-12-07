@@ -58,19 +58,15 @@ final class OnboardingView: UIView {
         control.currentPage = 0
         control.isUserInteractionEnabled = false
         control.pageIndicatorTintColor = .gray
-        control.currentPageIndicatorTintColor = .blue
+        control.currentPageIndicatorTintColor = UIColor(named: "Pink")!
 
         return control
     }()
 
-    private lazy var nextButton: UIButton = {
-        let button = UIButton(frame: .zero)
-        button.setTitle("Próximo", for: .normal)
-        button.backgroundColor = .blue
-        button.translatesAutoresizingMaskIntoConstraints = false
+    private lazy var nextButton: UICustomButton = {
+        let button = UICustomButton()
+        button.setupButton(title: "Continuar", font: (20, .bold))
         button.addTarget(self, action: #selector(toNext), for: .touchUpInside)
-        button.layer.cornerRadius = 10
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
 
         return button
     }()

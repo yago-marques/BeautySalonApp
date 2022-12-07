@@ -62,15 +62,9 @@ final class RegisterView: UIView {
         return textField
     }()
 
-    private lazy var confirmButton: UIButton = {
-        let button = UIButton(frame: .zero)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor(named: "Pink")
-        button.setTitle("Confirmar", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-        button.tintColor = UIColor.white
-        button.layer.cornerRadius = 9
-        button.clipsToBounds = true
+    private lazy var confirmButton: UICustomButton = {
+        let button = UICustomButton()
+        button.setupButton(title: "Entrar", font: (20, .bold))
         button.addTarget(
             self,
             action: #selector(didTapConfirmButtonTarget),
@@ -167,11 +161,13 @@ extension RegisterView: ViewCoding {
 
     func confirmButtonConstraints() {
         NSLayoutConstraint.activate([
+            self.confirmButton.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8),
             self.confirmButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            self.confirmButton.heightAnchor.constraint(equalToConstant: 50),
-            self.confirmButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.confirmButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            self.confirmButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50)
+            self.confirmButton.heightAnchor.constraint(equalTo: confirmButton.widthAnchor, multiplier: 0.2),
+            self.confirmButton.bottomAnchor.constraint(
+                equalTo: self.safeAreaLayoutGuide.bottomAnchor,
+                constant: self.frame.width*(-1)/10
+            )
         ])
     }
 }

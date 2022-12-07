@@ -51,7 +51,7 @@ final class OnboardingPresenter: OnboardingPresenting {
             switch direction {
             case .next:
                 controller?.displayScreen(at: 2)
-                controller?.setup(buttonTitle: "Entrar")
+                controller?.setup(buttonTitle: "Cadastro")
             case .prev:
                 controller?.displayScreen(at: 0)
                 controller?.hidePrevButton()
