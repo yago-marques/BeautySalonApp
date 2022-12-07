@@ -8,7 +8,7 @@
 import UIKit
 
 enum TextFields {
-    case name, phoneNumber
+    case name, phone
 }
 
 protocol RegisterViewDelegate: AnyObject {
@@ -46,7 +46,7 @@ final class RegisterView: UIView {
         return label
     }()
 
-    private lazy var nameTF: PeepTextField = {
+    private lazy var nameTextField: PeepTextField = {
         let textfield = PeepTextField(placeholder: "Nome")
         textfield.translatesAutoresizingMaskIntoConstraints = false
         textfield.maskType = .none
@@ -54,7 +54,7 @@ final class RegisterView: UIView {
         return textfield
     }()
 
-    private lazy var telephoneNumberTF: PeepTextField = {
+    private lazy var phoneTextField: PeepTextField = {
         let textField = PeepTextField(placeholder: "Telefone (somente números)")
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.maskType = .cellphone
@@ -88,7 +88,10 @@ final class RegisterView: UIView {
     }
 
     @objc func didTapConfirmButtonTarget() {
-        controllerDelegate?.registerIfIsPossible(name: nameTF.textfield.text, number: telephoneNumberTF.textfield.text)
+        controllerDelegate?.registerIfIsPossible(
+            name: nameTextField.textfield.text,
+            phone: phoneTextField.textfield.text
+        )
     }
 
     @available(*, unavailable)
@@ -99,9 +102,9 @@ extension RegisterView: RegisterViewDelegate {
     func turnTextFieldRed(_ textField: TextFields) {
         switch textField {
         case .name:
-            nameTF.borderRed()
-        case .phoneNumber:
-            telephoneNumberTF.borderRed()
+            nameTextField.borderRed()
+        case .phone:
+            phoneTextField.borderRed()
         }
     }
 }
@@ -115,8 +118,8 @@ extension RegisterView: ViewCoding {
         let views: [UIView] = [
             title,
             subtitle,
-            nameTF,
-            telephoneNumberTF,
+            nameTextField,
+            phoneTextField,
             confirmButton
         ]
         views.forEach { self.addSubview($0) }
@@ -146,19 +149,19 @@ extension RegisterView: ViewCoding {
 
     func nameTFConstraints() {
         NSLayoutConstraint.activate([
-            self.nameTF.topAnchor.constraint(equalTo: self.subtitle.bottomAnchor, constant: 50),
-            self.nameTF.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.nameTF.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            self.nameTF.heightAnchor.constraint(equalToConstant: 50)
+            self.nameTextField.topAnchor.constraint(equalTo: self.subtitle.bottomAnchor, constant: 50),
+            self.nameTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            self.nameTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            self.nameTextField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 
     func telephoneNumberTFConstraints() {
         NSLayoutConstraint.activate([
-            self.telephoneNumberTF.topAnchor.constraint(equalTo: self.nameTF.bottomAnchor, constant: 10),
-            self.telephoneNumberTF.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            self.telephoneNumberTF.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            self.telephoneNumberTF.heightAnchor.constraint(equalToConstant: 50)
+            self.phoneTextField.topAnchor.constraint(equalTo: self.nameTextField.bottomAnchor, constant: 10),
+            self.phoneTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            self.phoneTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            self.phoneTextField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 

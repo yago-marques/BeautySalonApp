@@ -8,7 +8,7 @@
 import UIKit
 
 protocol RegisterControllerDelegate: AnyObject {
-    func registerIfIsPossible(name: String?, number: String?)
+    func registerIfIsPossible(name: String?, phone: String?)
 }
 
 protocol RegisterControlling: AnyObject {
@@ -49,8 +49,8 @@ private extension RegisterController {
 }
 
 extension RegisterController: RegisterControllerDelegate {
-    func registerIfIsPossible(name: String?, number: String?) {
-        presenter?.tryRegisterUser(name: name, phoneNumber: number)
+    func registerIfIsPossible(name: String?, phone: String?) {
+        presenter?.tryRegisterUser(name: name, phone: phone)
     }
 }
 

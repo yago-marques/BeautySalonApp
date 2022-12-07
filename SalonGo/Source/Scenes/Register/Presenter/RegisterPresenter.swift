@@ -10,7 +10,7 @@ import Foundation
 protocol RegisterPresenting: AnyObject {
     var controller: RegisterControlling? { get set }
     var router: RegisterRouting { get set }
-    func tryRegisterUser(name: String?, phoneNumber: String?)
+    func tryRegisterUser(name: String?, phone: String?)
 }
 
 final class RegisterPresenter: RegisterPresenting {
@@ -28,7 +28,7 @@ final class RegisterPresenter: RegisterPresenting {
         self.router = router
     }
 
-    func tryRegisterUser(name: String?, phoneNumber: String?) {
+    func tryRegisterUser(name: String?, phone: String?) {
         var isPossible: Bool = true
 
         if !nameIsValid(name) {
@@ -36,14 +36,14 @@ final class RegisterPresenter: RegisterPresenting {
             isPossible = false
         }
 
-        if !phoneNumberIsVailid(phoneNumber) {
-            controller?.textFieldToRed(.phoneNumber)
+        if !phoneNumberIsVailid(phone) {
+            controller?.textFieldToRed(.phone)
             isPossible = false
         }
 
         if isPossible {
             do {
-                try saveUser(name: name, phone: phoneNumber)
+                try saveUser(name: name, phone: phone)
                 router.toCatalog()
             } catch {
                 print(error)
