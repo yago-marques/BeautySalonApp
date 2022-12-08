@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 protocol OnboardingViewDelegate: AnyObject {
     func showOnboarding()
@@ -42,7 +43,7 @@ final class OnboardingView: UIView {
         let myCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         myCollectionView.register(OnboardingCell.self, forCellWithReuseIdentifier: "OnboardingCell")
         myCollectionView.backgroundColor = .clear
-        myCollectionView.isPagingEnabled = true
+        myCollectionView.isUserInteractionEnabled = false
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         myCollectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -65,7 +66,7 @@ final class OnboardingView: UIView {
 
     private lazy var nextButton: UICustomButton = {
         let button = UICustomButton()
-        button.setupButton(title: "Continuar", font: (20, .bold))
+        button.setupButton(title: "Continuar", font: (17, .semibold))
         button.addTarget(self, action: #selector(toNext), for: .touchUpInside)
 
         return button
@@ -229,6 +230,12 @@ extension OnboardingView: UICollectionViewDataSource {
         ) as? OnboardingCell else {
             return UICollectionViewCell()
         }
+
+        cell.viewModel = controller?.getCellViewModel(at: indexPath.row) ?? .init(
+            animation: "",
+            title: "",
+            subtitle: ""
+        )
 
         return cell
     }

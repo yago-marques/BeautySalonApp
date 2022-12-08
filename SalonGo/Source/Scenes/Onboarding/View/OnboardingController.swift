@@ -19,6 +19,7 @@ protocol OnboardingControllerDelegate: AnyObject {
 
 protocol OnboardingControlling {
     func capturedAction(direction: OnboardingDirection)
+    func getCellViewModel(at row: Int) -> OnboardingViewModel
 }
 
 final class OnboardingController: UIViewController {
@@ -69,6 +70,10 @@ private extension OnboardingController {
 extension OnboardingController: OnboardingControlling {
     func capturedAction(direction: OnboardingDirection) {
         presenter.verifyCapturedAction(direction: direction)
+    }
+
+    func getCellViewModel(at row: Int) -> OnboardingViewModel {
+        presenter.getCellViewModel(row: row)
     }
 }
 

@@ -63,6 +63,10 @@
 		DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A492940DA7900B9606C /* AdminEntity.swift */; };
 		DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */; };
 		DFF03A502941288F00B9606C /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4F2941288F00B9606C /* UICustomButton.swift */; };
+		DFF03A532941335E00B9606C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFF03A522941335E00B9606C /* Lottie */; };
+		DFF03A5629413E9C00B9606C /* welcomeHandle.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5529413E9C00B9606C /* welcomeHandle.json */; };
+		DFF03A5E294177CA00B9606C /* appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5D294177CA00B9606C /* appointment.json */; };
+		DFF03A6029417A9300B9606C /* beautifulGirl.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5F29417A9300B9606C /* beautifulGirl.json */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
@@ -142,6 +146,9 @@
 		DFF03A492940DA7900B9606C /* AdminEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminEntity.swift; sourceTree = "<group>"; };
 		DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypoKitClient.swift; sourceTree = "<group>"; };
 		DFF03A4F2941288F00B9606C /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
+		DFF03A5529413E9C00B9606C /* welcomeHandle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcomeHandle.json; sourceTree = "<group>"; };
+		DFF03A5D294177CA00B9606C /* appointment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appointment.json; sourceTree = "<group>"; };
+		DFF03A5F29417A9300B9606C /* beautifulGirl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beautifulGirl.json; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */,
+				DFF03A532941335E00B9606C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 		DF699E7B291AD24900EF7C78 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A5429413E1B00B9606C /* LottieFiles */,
 				F32CFAC6291933450056E794 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -592,6 +601,16 @@
 			path = "UI Components";
 			sourceTree = "<group>";
 		};
+		DFF03A5429413E1B00B9606C /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A5F29417A9300B9606C /* beautifulGirl.json */,
+				DFF03A5D294177CA00B9606C /* appointment.json */,
+				DFF03A5529413E9C00B9606C /* welcomeHandle.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -686,6 +705,7 @@
 			name = SalonGo;
 			packageProductDependencies = (
 				DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */,
+				DFF03A522941335E00B9606C /* Lottie */,
 			);
 			productName = SalonGo;
 			productReference = F32CFAB7291933440056E794 /* SalonGo.app */;
@@ -740,6 +760,7 @@
 			mainGroup = F32CFAAE291933440056E794;
 			packageReferences = (
 				DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = F32CFAB8291933440056E794 /* Products */;
 			projectDirPath = "";
@@ -756,8 +777,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF03A5629413E9C00B9606C /* welcomeHandle.json in Resources */,
 				F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */,
+				DFF03A6029417A9300B9606C /* beautifulGirl.json in Resources */,
 				F32CFAC7291933450056E794 /* Assets.xcassets in Resources */,
+				DFF03A5E294177CA00B9606C /* appointment.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,6 +1179,14 @@
 				kind = branch;
 			};
 		};
+		DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1162,6 +1194,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		DFF03A522941335E00B9606C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 

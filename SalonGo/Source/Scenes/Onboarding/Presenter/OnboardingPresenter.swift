@@ -12,6 +12,7 @@ protocol OnboardingPresenting {
     var controller: OnboardingControllerDelegate? {get set}
     func showOnboardingIfNeeded()
     func verifyCapturedAction(direction: OnboardingDirection)
+    func getCellViewModel(row: Int) -> OnboardingViewModel
 }
 
 enum OnboardingPage {
@@ -38,6 +39,30 @@ final class OnboardingPresenter: OnboardingPresenting {
             router.toCatalog()
         } else {
             controller?.showOnboarding()
+        }
+    }
+
+    func getCellViewModel(row: Int) -> OnboardingViewModel {
+        switch row {
+        case 0:
+            return .init(
+                animation: "welcomeHandle",
+                title: "Seja bem vindo(a)",
+                subtitle: "Encontre sua melhor versão"
+            )
+        case 1:
+            return .init(
+                animation: "appointment",
+                title: "O melhor horário",
+                subtitle: "Nós vamos te ajudar a encontrar o melhor horário no salão, para sua melhor experiência"
+            )
+        case 2:
+            return .init(
+                animation: "beautifulGirl",
+                title: "Melhores serviços",
+                subtitle: "Disponibilizamos um catálogo com vários serviços diversificados"
+            )
+        default: return .init(animation: "", title: "", subtitle: "")
         }
     }
 

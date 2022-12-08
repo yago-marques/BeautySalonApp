@@ -41,7 +41,7 @@ final class RegisterView: UIView {
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.textColor = UIColor(named: "OffBlack")
+        label.textColor = .secondaryLabel
 
         return label
     }()
