@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7399efb730eea084571b45a1a9b36a3a3c54c44f"
+      }
+    },
+    {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "revision" : "57fd1ec26f5cb00a8e5082f2b22ef300bda66ed5",
+        "version" : "4.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -44,12 +44,39 @@
 		DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */; };
 		DF9FBE22292C48EA00084694 /* CoreDataStackFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */; };
 		DF9FBE25292C4CE400084694 /* UserEntityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE24292C4CE400084694 /* UserEntityMock.swift */; };
+		DF9FBE2A2930DEF400084694 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE292930DEF400084694 /* OnboardingController.swift */; };
+		DF9FBE2C2930DFB300084694 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE2B2930DFB300084694 /* OnboardingView.swift */; };
+		DF9FBE2F2930E25000084694 /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE2E2930E25000084694 /* ViewCoding.swift */; };
+		DF9FBE322930E39400084694 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE312930E39400084694 /* OnboardingCell.swift */; };
+		DF9FBE3429312A6900084694 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3329312A6900084694 /* OnboardingRouter.swift */; };
+		DF9FBE372931536F00084694 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE362931536F00084694 /* OnboardingPresenter.swift */; };
+		DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */; };
+		DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */; };
+		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
+		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
+		DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */; };
+		DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A25293FC2B100B9606C /* RegisterFactory.swift */; };
+		DFF03A2E293FC68500B9606C /* OnboardingControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */; };
+		DFF03A30293FC6C500B9606C /* OnboardingPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */; };
+		DFF03A33293FCA8900B9606C /* OnboardingViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */; };
+		DFF03A482940D96800B9606C /* CKAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A472940D96800B9606C /* CKAdmin.swift */; };
+		DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A492940DA7900B9606C /* AdminEntity.swift */; };
+		DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */; };
+		DFF03A502941288F00B9606C /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4F2941288F00B9606C /* UICustomButton.swift */; };
+		DFF03A532941335E00B9606C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFF03A522941335E00B9606C /* Lottie */; };
+		DFF03A5629413E9C00B9606C /* welcomeHandle.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5529413E9C00B9606C /* welcomeHandle.json */; };
+		DFF03A5E294177CA00B9606C /* appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5D294177CA00B9606C /* appointment.json */; };
+		DFF03A6029417A9300B9606C /* beautifulGirl.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5F29417A9300B9606C /* beautifulGirl.json */; };
 		F32CFABB291933440056E794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABA291933440056E794 /* AppDelegate.swift */; };
 		F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABC291933440056E794 /* SceneDelegate.swift */; };
 		F32CFABF291933440056E794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32CFABE291933440056E794 /* ViewController.swift */; };
 		F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */; };
 		F32CFAC7291933450056E794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC6291933450056E794 /* Assets.xcassets */; };
 		F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32CFAC8291933450056E794 /* LaunchScreen.storyboard */; };
+		F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */; };
+		F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE0293E1DB400550F18 /* RegisterView.swift */; };
+		F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */; };
+		F3FD0DEE293F80BA00550F18 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +128,27 @@
 		DF9FBE1B292C43FA00084694 /* UserDBManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBManagerTests.swift; sourceTree = "<group>"; };
 		DF9FBE21292C48EA00084694 /* CoreDataStackFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackFake.swift; sourceTree = "<group>"; };
 		DF9FBE24292C4CE400084694 /* UserEntityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntityMock.swift; sourceTree = "<group>"; };
+		DF9FBE292930DEF400084694 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		DF9FBE2B2930DFB300084694 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DF9FBE2E2930E25000084694 /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
+		DF9FBE312930E39400084694 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		DF9FBE3329312A6900084694 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		DF9FBE362931536F00084694 /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
+		DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
+		DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		DFF03A25293FC2B100B9606C /* RegisterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFactory.swift; sourceTree = "<group>"; };
+		DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingControllerTests.swift; sourceTree = "<group>"; };
+		DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterSpy.swift; sourceTree = "<group>"; };
+		DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewMock.swift; sourceTree = "<group>"; };
+		DFF03A472940D96800B9606C /* CKAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAdmin.swift; sourceTree = "<group>"; };
+		DFF03A492940DA7900B9606C /* AdminEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminEntity.swift; sourceTree = "<group>"; };
+		DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrypoKitClient.swift; sourceTree = "<group>"; };
+		DFF03A4F2941288F00B9606C /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
+		DFF03A5529413E9C00B9606C /* welcomeHandle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcomeHandle.json; sourceTree = "<group>"; };
+		DFF03A5D294177CA00B9606C /* appointment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appointment.json; sourceTree = "<group>"; };
+		DFF03A5F29417A9300B9606C /* beautifulGirl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beautifulGirl.json; sourceTree = "<group>"; };
 		F32CFAB7291933440056E794 /* SalonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32CFABA291933440056E794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32CFABC291933440056E794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +158,10 @@
 		F32CFAC9291933450056E794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F32CFACB291933450056E794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F32CFAD0291933450056E794 /* SalonGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalonGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		F3FD0DE0293E1DB400550F18 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepTextField.swift; sourceTree = "<group>"; };
+		F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +169,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */,
+				DFF03A532941335E00B9606C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +187,7 @@
 		DF18BFD7291AE21300C0570A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				DF9FBE2D2930E23B00084694 /* Protocols */,
 				DF18BFE6291AF63D00C0570A /* Constants */,
 			);
 			path = Util;
@@ -169,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				DF18BFF3291B2CC800C0570A /* Client */,
+				DFF03A27293FC59100B9606C /* Scenes */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -212,6 +268,7 @@
 		DF18BFFE291BC99F00C0570A /* CKEntity */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A492940DA7900B9606C /* AdminEntity.swift */,
 				DF18BFFF291BC9BC00C0570A /* AccountEntity.swift */,
 				DF18C001291BCA0D00C0570A /* UserEntity.swift */,
 				DF18C003291BCABC00C0570A /* ServiceEntity.swift */,
@@ -225,9 +282,11 @@
 		DF699E7A291AD24100EF7C78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A4E2941285700B9606C /* UI Components */,
 				DF18BFD7291AE21300C0570A /* Util */,
-				DF9FBE0C292BFE6200084694 /* Entities */,
 				DF699E7E291AD56000EF7C78 /* Client */,
+				DF9FBE0C292BFE6200084694 /* Entity */,
+				DF9FBE262930DD0A00084694 /* Scenes */,
 				F32CFABE291933440056E794 /* ViewController.swift */,
 			);
 			path = Source;
@@ -236,6 +295,7 @@
 		DF699E7B291AD24900EF7C78 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A5429413E1B00B9606C /* LottieFiles */,
 				F32CFAC6291933450056E794 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -254,6 +314,7 @@
 		DF699E7E291AD56000EF7C78 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A4B2940F8EC00B9606C /* CryptoKit */,
 				DF9FBE0F292BFED900084694 /* CoreData */,
 				DF9FBDD62929175F00084694 /* Keychain */,
 				DF699E7F291AD57500EF7C78 /* CloudKit */,
@@ -276,6 +337,7 @@
 		DF699E82291AD6B000EF7C78 /* CKModel */ = {
 			isa = PBXGroup;
 			children = (
+				DFF03A472940D96800B9606C /* CKAdmin.swift */,
 				DF699E83291AD6C400EF7C78 /* CKAccount.swift */,
 				DF18BFDC291AE87B00C0570A /* CKUser.swift */,
 				DF18BFDE291AE91500C0570A /* CKCompany.swift */,
@@ -340,12 +402,12 @@
 			path = TestDoubles;
 			sourceTree = "<group>";
 		};
-		DF9FBE0C292BFE6200084694 /* Entities */ = {
+		DF9FBE0C292BFE6200084694 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				DF9FBE0D292BFE7E00084694 /* User.swift */,
 			);
-			path = Entities;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		DF9FBE0F292BFED900084694 /* CoreData */ = {
@@ -393,6 +455,162 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		DF9FBE262930DD0A00084694 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DD3293E1C8B00550F18 /* Register */,
+				DF9FBE272930DEBD00084694 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DF9FBE272930DEBD00084694 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE3E2931614700084694 /* Factory */,
+				DF9FBE3A29315BC100084694 /* View */,
+				DF9FBE3C29315BF200084694 /* Interactor */,
+				DF9FBE3B29315BDD00084694 /* Presenter */,
+				DF9FBE3D29315C3F00084694 /* Router */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DF9FBE2D2930E23B00084694 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE2E2930E25000084694 /* ViewCoding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DF9FBE302930E36800084694 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE312930E39400084694 /* OnboardingCell.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		DF9FBE3A29315BC100084694 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE302930E36800084694 /* UI Components */,
+				DF9FBE292930DEF400084694 /* OnboardingController.swift */,
+				DF9FBE2B2930DFB300084694 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF9FBE3B29315BDD00084694 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE362931536F00084694 /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DF9FBE3C29315BF200084694 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DF9FBE3D29315C3F00084694 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE3329312A6900084694 /* OnboardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DF9FBE3E2931614700084694 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		DFD69F49293E3B56009C7933 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DFF03A24293FC27000B9606C /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A25293FC2B100B9606C /* RegisterFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		DFF03A27293FC59100B9606C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A28293FC59B00B9606C /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DFF03A28293FC59B00B9606C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2C293FC65500B9606C /* TestsDoubles */,
+				DFF03A29293FC5B600B9606C /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DFF03A29293FC5B600B9606C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2D293FC68500B9606C /* OnboardingControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFF03A2C293FC65500B9606C /* TestsDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A2F293FC6C500B9606C /* OnboardingPresenterSpy.swift */,
+				DFF03A32293FCA8900B9606C /* OnboardingViewMock.swift */,
+			);
+			path = TestsDoubles;
+			sourceTree = "<group>";
+		};
+		DFF03A4B2940F8EC00B9606C /* CryptoKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */,
+			);
+			path = CryptoKit;
+			sourceTree = "<group>";
+		};
+		DFF03A4E2941285700B9606C /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DE3293E1DD700550F18 /* PeepTextField.swift */,
+				DFF03A4F2941288F00B9606C /* UICustomButton.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		DFF03A5429413E1B00B9606C /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A5F29417A9300B9606C /* beautifulGirl.json */,
+				DFF03A5D294177CA00B9606C /* appointment.json */,
+				DFF03A5529413E9C00B9606C /* welcomeHandle.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
 		F32CFAAE291933440056E794 = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +649,43 @@
 			path = SalonGoTests;
 			sourceTree = "<group>";
 		};
+		F3FD0DD3293E1C8B00550F18 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A24293FC27000B9606C /* Factory */,
+				F3FD0DD5293E1CAF00550F18 /* View */,
+				F3FD0DE9293F721E00550F18 /* Interactor */,
+				DFD69F49293E3B56009C7933 /* Presenter */,
+				F3FD0DEC293F80A600550F18 /* Router */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F3FD0DD5293E1CAF00550F18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DE0293E1DB400550F18 /* RegisterView.swift */,
+				F3FD0DDE293E1DAC00550F18 /* RegisterController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3FD0DE9293F721E00550F18 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F3FD0DEC293F80A600550F18 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F3FD0DED293F80BA00550F18 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +703,10 @@
 			dependencies = (
 			);
 			name = SalonGo;
+			packageProductDependencies = (
+				DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */,
+				DFF03A522941335E00B9606C /* Lottie */,
+			);
 			productName = SalonGo;
 			productReference = F32CFAB7291933440056E794 /* SalonGo.app */;
 			productType = "com.apple.product-type.application";
@@ -499,6 +758,10 @@
 				Base,
 			);
 			mainGroup = F32CFAAE291933440056E794;
+			packageReferences = (
+				DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F32CFAB8291933440056E794 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -514,8 +777,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF03A5629413E9C00B9606C /* welcomeHandle.json in Resources */,
 				F32CFACA291933450056E794 /* LaunchScreen.storyboard in Resources */,
+				DFF03A6029417A9300B9606C /* beautifulGirl.json in Resources */,
 				F32CFAC7291933450056E794 /* Assets.xcassets in Resources */,
+				DFF03A5E294177CA00B9606C /* appointment.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,36 +821,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18C006291BCB0A00C0570A /* CompanyEntity.swift in Sources */,
+				DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */,
 				DF18BFE5291AEA2E00C0570A /* CKRating.swift in Sources */,
+				F3FD0DE4293E1DD700550F18 /* PeepTextField.swift in Sources */,
 				DF18BFEC291B091600C0570A /* RemoteClient.swift in Sources */,
+				DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */,
 				DF18C002291BCA0D00C0570A /* UserEntity.swift in Sources */,
 				F32CFABF291933440056E794 /* ViewController.swift in Sources */,
 				DF699E81291AD59200EF7C78 /* CloudKitClient.swift in Sources */,
+				DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */,
 				DF9FBE032929362B00084694 /* QueryProtocol.swift in Sources */,
 				DF9FBE14292C0C6300084694 /* CoreDataStack.swift in Sources */,
 				DF18BFF1291B0BBF00C0570A /* CKContainerHelper.swift in Sources */,
 				DF9FBE0E292BFE7E00084694 /* User.swift in Sources */,
 				DF9FBE17292C161D00084694 /* UserDBManager.swift in Sources */,
+				DF9FBE3429312A6900084694 /* OnboardingRouter.swift in Sources */,
+				DFF03A502941288F00B9606C /* UICustomButton.swift in Sources */,
 				DF9FBE002929316D00084694 /* KeychainProtocol.swift in Sources */,
 				DF18BFE8291AF65200C0570A /* EntityFields.swift in Sources */,
+				DF9FBE2C2930DFB300084694 /* OnboardingView.swift in Sources */,
+				DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */,
+				DF9FBE322930E39400084694 /* OnboardingCell.swift in Sources */,
 				DF18BFEA291B056400C0570A /* CKStructProtocol.swift in Sources */,
+				DF9FBE2A2930DEF400084694 /* OnboardingController.swift in Sources */,
 				DF18BFE3291AE9C400C0570A /* CKAppointment.swift in Sources */,
+				DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */,
+				DFF03A482940D96800B9606C /* CKAdmin.swift in Sources */,
 				DF18C000291BC9BC00C0570A /* AccountEntity.swift in Sources */,
+				DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */,
 				DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */,
 				F32CFABB291933440056E794 /* AppDelegate.swift in Sources */,
 				DF18C008291BCB5E00C0570A /* AppointmentEntity.swift in Sources */,
+				F3FD0DE1293E1DB400550F18 /* RegisterView.swift in Sources */,
 				DF18C004291BCABC00C0570A /* ServiceEntity.swift in Sources */,
+				DF9FBE2F2930E25000084694 /* ViewCoding.swift in Sources */,
 				DF9FBDFD2929311A00084694 /* Keychain.swift in Sources */,
+				F3FD0DDF293E1DAC00550F18 /* RegisterController.swift in Sources */,
 				F32CFABD291933440056E794 /* SceneDelegate.swift in Sources */,
 				DF9FBE11292BFF0200084694 /* CoreDataClient.swift in Sources */,
+				F3FD0DEE293F80BA00550F18 /* RegisterRouter.swift in Sources */,
 				F32CFAC5291933440056E794 /* SalonGo.xcdatamodeld in Sources */,
 				DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */,
 				DF9FBDD82929177B00084694 /* KeychainClient.swift in Sources */,
 				DF18BFE1291AE96600C0570A /* CKService.swift in Sources */,
 				DF9FBE06292936FC00084694 /* QueryManager.swift in Sources */,
+				DF9FBE372931536F00084694 /* OnboardingPresenter.swift in Sources */,
 				DF9FBDDA29291F3A00084694 /* SafeStorage.swift in Sources */,
 				DF18BFEE291B0A9300C0570A /* CKContainerProtocol.swift in Sources */,
 				DF18C00A291BCC0300C0570A /* RatingEntity.swift in Sources */,
+				DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */,
 				DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */,
 				DF699E84291AD6C400EF7C78 /* CKAccount.swift in Sources */,
 			);
@@ -595,6 +880,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF18BFF9291B2DC700C0570A /* CloudKitContainerStub.swift in Sources */,
+				DFF03A30293FC6C500B9606C /* OnboardingPresenterSpy.swift in Sources */,
+				DFF03A33293FCA8900B9606C /* OnboardingViewMock.swift in Sources */,
+				DFF03A2E293FC68500B9606C /* OnboardingControllerTests.swift in Sources */,
 				DF9FBE0B29293E4B00084694 /* KeychainSpy.swift in Sources */,
 				DF18BFF6291B2D0D00C0570A /* CloudKitClientTests.swift in Sources */,
 				DF9FBE1C292C43FA00084694 /* UserDBManagerTests.swift in Sources */,
@@ -749,7 +1037,7 @@
 				CODE_SIGN_ENTITLEMENTS = SalonGo/SalonGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				DEVELOPMENT_TEAM = 2P65JA735T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SalonGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -778,7 +1066,7 @@
 				CODE_SIGN_ENTITLEMENTS = SalonGo/SalonGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3PC4MSN8T7;
+				DEVELOPMENT_TEAM = 2P65JA735T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SalonGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -881,6 +1169,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		DFF03A522941335E00B9606C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F32CFAC3291933440056E794 /* SalonGo.xcdatamodeld */ = {
