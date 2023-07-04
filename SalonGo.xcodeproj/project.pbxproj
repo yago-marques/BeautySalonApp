@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF02F7D52A54CCD900F8F6A7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DF02F7D42A54CCD900F8F6A7 /* Lottie */; };
+		DF02F7D82A54CCF300F8F6A7 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF02F7D72A54CCF300F8F6A7 /* IQKeyboardManagerSwift */; };
 		DF18BFDA291AE23100C0570A /* CKEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFD9291AE23100C0570A /* CKEntityProtocol.swift */; };
 		DF18BFDD291AE87B00C0570A /* CKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDC291AE87B00C0570A /* CKUser.swift */; };
 		DF18BFDF291AE91500C0570A /* CKCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18BFDE291AE91500C0570A /* CKCompany.swift */; };
@@ -52,7 +54,6 @@
 		DF9FBE372931536F00084694 /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE362931536F00084694 /* OnboardingPresenter.swift */; };
 		DF9FBE3929315B5700084694 /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3829315B5700084694 /* OnboardingInteractor.swift */; };
 		DF9FBE402931615B00084694 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FBE3F2931615B00084694 /* OnboardingFactory.swift */; };
-		DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */; };
 		DFD69F4B293E3B76009C7933 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD69F4A293E3B76009C7933 /* RegisterPresenter.swift */; };
 		DFF03A23293FC15F00B9606C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A22293FC15F00B9606C /* RegisterInteractor.swift */; };
 		DFF03A26293FC2B100B9606C /* RegisterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A25293FC2B100B9606C /* RegisterFactory.swift */; };
@@ -63,7 +64,6 @@
 		DFF03A4A2940DA7900B9606C /* AdminEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A492940DA7900B9606C /* AdminEntity.swift */; };
 		DFF03A4D2940F90D00B9606C /* CrypoKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4C2940F90D00B9606C /* CrypoKitClient.swift */; };
 		DFF03A502941288F00B9606C /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF03A4F2941288F00B9606C /* UICustomButton.swift */; };
-		DFF03A532941335E00B9606C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFF03A522941335E00B9606C /* Lottie */; };
 		DFF03A5629413E9C00B9606C /* welcomeHandle.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5529413E9C00B9606C /* welcomeHandle.json */; };
 		DFF03A5E294177CA00B9606C /* appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5D294177CA00B9606C /* appointment.json */; };
 		DFF03A6029417A9300B9606C /* beautifulGirl.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF03A5F29417A9300B9606C /* beautifulGirl.json */; };
@@ -169,8 +169,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD69F48293E2F05009C7933 /* IQKeyboardManagerSwift in Frameworks */,
-				DFF03A532941335E00B9606C /* Lottie in Frameworks */,
+				DF02F7D52A54CCD900F8F6A7 /* Lottie in Frameworks */,
+				DF02F7D82A54CCF300F8F6A7 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,8 +704,8 @@
 			);
 			name = SalonGo;
 			packageProductDependencies = (
-				DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */,
-				DFF03A522941335E00B9606C /* Lottie */,
+				DF02F7D42A54CCD900F8F6A7 /* Lottie */,
+				DF02F7D72A54CCF300F8F6A7 /* IQKeyboardManagerSwift */,
 			);
 			productName = SalonGo;
 			productReference = F32CFAB7291933440056E794 /* SalonGo.app */;
@@ -759,8 +759,8 @@
 			);
 			mainGroup = F32CFAAE291933440056E794;
 			packageReferences = (
-				DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DF02F7D32A54CCD900F8F6A7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DF02F7D62A54CCF300F8F6A7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = F32CFAB8291933440056E794 /* Products */;
 			projectDirPath = "";
@@ -1171,15 +1171,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		DF02F7D32A54CCD900F8F6A7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1187,18 +1179,26 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		DF02F7D62A54CCF300F8F6A7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DFD69F47293E2F05009C7933 /* IQKeyboardManagerSwift */ = {
+		DF02F7D42A54CCD900F8F6A7 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DFD69F46293E2F05009C7933 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-		DFF03A522941335E00B9606C /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DFF03A512941335E00B9606C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = DF02F7D32A54CCD900F8F6A7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		DF02F7D72A54CCF300F8F6A7 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF02F7D62A54CCF300F8F6A7 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
