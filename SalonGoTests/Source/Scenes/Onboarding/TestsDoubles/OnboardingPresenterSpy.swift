@@ -9,6 +9,10 @@ import Foundation
 @testable import SalonGo
 
 final class OnboardingPresenterSpy: OnboardingPresenting {
+    func getCellViewModel(row: Int) -> SalonGo.OnboardingViewModel {
+        .init(animation: "", title: "", subtitle: "")
+    }
+
     enum Message: Equatable {
         case showOnboardingIfNeeded
         case verifyCapturedAction(direction: OnboardingDirection)
