@@ -1,6 +1,6 @@
 # SalonGO
 
-<img src="https://user-images.githubusercontent.com/84297648/194332580-aae0caf6-a94d-4edb-a865-334e9a48915d.png" width=200/>
+<img width="200" alt="Screenshot 2023-07-06 at 13 49 19" src="https://github.com/yago-marques/SalonGO/assets/84297648/61392ff1-0dbe-4bbd-bca9-69a396d17720">
 
 <hr>
 
@@ -9,7 +9,7 @@
 > iOS application with a user registration implemented with cloudkit, we handle registration security with keychain to persist the token and cryptokit to create the tokens
 
 ## 🎥 DEMO
-Upload your video here
+https://github.com/yago-marques/SalonGO/assets/84297648/3d8dfb9b-4aff-458e-857c-c0d73effe53c
 
 ## 👩🏾‍💻 Technologies
 - [x] SPM - swift package manager
